@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Schémas Électroniques — Projet 1DA TP2</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#cfd4d9; font-family:Helvetica,Arial,sans-serif; }
+.header { background:#0d1b2a; padding:14px 28px; color:white; display:flex; align-items:center; gap:16px; }
+.header h1 { font-size:16px; font-weight:600; letter-spacing:0.3px; }
+.header .sub { margin-left:auto; font-size:11px; color:#8da0b0; }
+.tabs { display:flex; background:#132233; border-bottom:2px solid #1e3a5a; }
+.tab { padding:11px 26px; color:#7a9ab8; cursor:pointer; font-size:13px; font-weight:500; border-bottom:3px solid transparent; transition:all .2s; user-select:none; }
+.tab:hover { color:#b8d0e8; background:rgba(255,255,255,0.04); }
+.tab.active { color:white; border-bottom-color:#4da6ff; background:rgba(255,255,255,0.07); }
+.page { display:none; }
+.page.active { display:block; }
+.wrap { padding:24px; display:flex; justify-content:center; background:#cfd4d9; overflow:auto; }
+svg { display:block; box-shadow:0 3px 16px rgba(0,0,0,0.22); border:1px solid #bbb; }
+</style>
+</head>
+<body>
+<div class="header">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4da6ff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+  <h1>Schémas Électroniques — Station de Mesure Multi-Capteurs</h1>
+  <div class="sub">Projet 1DA TP2 — v2.0 — 2025</div>
+</div>
+<div class="tabs">
+  <div class="tab active" onclick="show(0)">&#9728; Schéma 1 — Capteur de Luminosité (Photodiode)</div>
+  <div class="tab" onclick="show(1)">&#127777; Schéma 2 — Capteur de Température (Jonction PN)</div>
+</div>
+
+<!-- ===================== SCHÉMA LUMINOSITÉ ===================== -->
+<div id="p0" class="page active">
+<div class="wrap">
+<svg width="1520" height="980" viewBox="0 0 1520 980" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="la" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#1a4080"/></marker>
+  <marker id="lb" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#333"/></marker>
+</defs>
+<!-- Fond blanc -->
+<rect width="1520" height="980" fill="white"/>
+
+<!-- ============ BLOCS FONCTIONNELS ============ -->
+<!-- FS1 Transimpédance -->
+<rect x="28" y="108" width="438" height="540" fill="none" stroke="#1a4080" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="28" y="108" width="260" height="18" fill="#1a4080" rx="2"/>
+<text x="34" y="121" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS1 — Transimpédance (I→V)</text>
+
+<!-- FS2 Sallen-Key -->
+<rect x="478" y="108" width="408" height="540" fill="none" stroke="#1a4080" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="478" y="108" width="308" height="18" fill="#1a4080" rx="2"/>
+<text x="484" y="121" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS2 — Filtrage Sallen-Key 2ème ordre (fc ≈ 100 Hz)</text>
+
+<!-- FS3 Protection ADC -->
+<rect x="898" y="238" width="192" height="210" fill="none" stroke="#c05000" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="898" y="238" width="158" height="18" fill="#c05000" rx="2"/>
+<text x="904" y="251" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS3 — Protection ADC (÷2)</text>
+
+<!-- FS4 Découplage -->
+<rect x="28" y="38" width="438" height="60" fill="none" stroke="#1a8040" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="28" y="38" width="278" height="18" fill="#1a8040" rx="2"/>
+<text x="34" y="51" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS4 — Découplage VCC (100 nF // 10 µF)</text>
+
+<!-- FS6 ESP32 -->
+<rect x="1108" y="68" width="390" height="672" fill="none" stroke="#770090" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="1108" y="68" width="270" height="18" fill="#770090" rx="2"/>
+<text x="1114" y="81" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS6 — Microcontrôleur ESP32-C3</text>
+
+
+<!-- ============ DÉCOUPLAGE VCC (FS4) ============ -->
+<!-- VCC -->
+<line x1="160" y1="96" x2="160" y2="72" stroke="black" stroke-width="1.5"/>
+<polygon points="160,60 154,72 166,72" fill="black"/>
+<text x="166" y="65" font-size="11" font-family="Helvetica,Arial,sans-serif" font-weight="bold">VCC</text>
+<!-- C_d1 100nF -->
+<line x1="250" y1="96" x2="250" y2="84" stroke="black" stroke-width="1.5"/>
+<line x1="236" y1="84" x2="264" y2="84" stroke="black" stroke-width="2.5"/>
+<line x1="236" y1="78" x2="264" y2="78" stroke="black" stroke-width="2.5"/>
+<line x1="250" y1="78" x2="250" y2="60" stroke="black" stroke-width="1.5"/>
+<polygon points="250,58 244,66 256,66" fill="black"/>
+<text x="268" y="66" font-size="9.5" font-family="Helvetica,Arial,sans-serif" fill="#1a8040">C_d1 = 100 nF cér.</text>
+<!-- C_d2 10µF -->
+<line x1="340" y1="96" x2="340" y2="84" stroke="black" stroke-width="1.5"/>
+<line x1="326" y1="84" x2="354" y2="84" stroke="black" stroke-width="2.5"/>
+<line x1="326" y1="79" x2="354" y2="79" stroke="black" stroke-width="2.5"/>
+<line x1="340" y1="79" x2="340" y2="60" stroke="black" stroke-width="1.5"/>
+<polygon points="340,58 334,66 346,66" fill="black"/>
+<text x="358" y="66" font-size="9.5" font-family="Helvetica,Arial,sans-serif" fill="#1a8040">C_d2 = 10 µF élec.</text>
+<!-- GND pour découplage -->
+<line x1="250" y1="96" x2="340" y2="96" stroke="black" stroke-width="1.5"/>
+<line x1="295" y1="96" x2="295" y2="104" stroke="black" stroke-width="1.5"/>
+<line x1="281" y1="104" x2="309" y2="104" stroke="black" stroke-width="1.5"/>
+<line x1="285" y1="109" x2="305" y2="109" stroke="black" stroke-width="1"/>
+<line x1="289" y1="114" x2="301" y2="114" stroke="black" stroke-width="1"/>
+<text x="270" y="126" font-size="9.5" fill="#555" font-family="Helvetica,Arial,sans-serif">GND</text>
+
+
+<!-- ============ D1 PHOTODIODE (FS1) ============ -->
+<!-- Vertical photodiode: anode bottom (→GND), cathode top (→-IN) -->
+<!-- D1 center at x=130, y=360 -->
+<!-- Light arrows (incoming photons) -->
+<line x1="178" y1="322" x2="158" y2="342" stroke="#e08800" stroke-width="1.5" marker-end="url(#lb)"/>
+<line x1="188" y1="340" x2="168" y2="360" stroke="#e08800" stroke-width="1.5" marker-end="url(#lb)"/>
+<!-- Photodiode symbol (vertical, cathode top, anode bottom) -->
+<!-- Anode wire (bottom) -->
+<line x1="130" y1="408" x2="130" y2="490" stroke="black" stroke-width="1.5"/>
+<!-- GND at anode -->
+<line x1="116" y1="490" x2="144" y2="490" stroke="black" stroke-width="1.5"/>
+<line x1="120" y1="496" x2="140" y2="496" stroke="black" stroke-width="1.5"/>
+<line x1="124" y1="502" x2="136" y2="502" stroke="black" stroke-width="1.5"/>
+<text x="148" y="498" font-size="10" font-family="Helvetica,Arial,sans-serif">GND</text>
+<!-- Diode body (pointing up: anode at bottom y=408, cathode at top y=312) -->
+<polygon points="118,408 142,408 130,368" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="118" y1="368" x2="142" y2="368" stroke="black" stroke-width="2"/>
+<!-- Cathode wire up -->
+<line x1="130" y1="368" x2="130" y2="312" stroke="black" stroke-width="1.5"/>
+<!-- D1 label -->
+<text x="148" y="395" font-size="10.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">D1</text>
+<text x="148" y="408" font-size="9.5" font-family="Helvetica,Arial,sans-serif">Photodiode</text>
+<text x="148" y="420" font-size="9" font-family="Helvetica,Arial,sans-serif" fill="#555">(Anode→GND)</text>
+<!-- Node at cathode -->
+<circle cx="130" cy="312" r="3.5" fill="black"/>
+<!-- Wire from cathode right to -IN of U1.A -->
+<line x1="130" y1="312" x2="240" y2="312" stroke="black" stroke-width="1.5"/>
+<!-- Net label -->
+<text x="155" y="307" font-size="9.5" font-family="Helvetica,Arial,sans-serif" fill="#1a4080">I_ph</text>
+
+<!-- ============ U1.A TRANSIMPÉDANCE (MCP6022) ============ -->
+<!-- Op-amp triangle: left at x=240, right tip at (370,360) -->
+<!-- Upper-left at (240,315), Lower-left at (240,405), Tip at (370,360) -->
+<polygon points="240,315 240,405 370,360" fill="#f8f8ff" stroke="black" stroke-width="1.5"/>
+<!-- -IN (upper, y=332): connects from D1 cathode wire -->
+<line x1="200" y1="332" x2="240" y2="332" stroke="black" stroke-width="1.5"/>
+<text x="245" y="335" font-size="10" font-family="Helvetica,Arial,sans-serif">−</text>
+<!-- +IN (lower, y=388): connects to GND -->
+<line x1="200" y1="388" x2="240" y2="388" stroke="black" stroke-width="1.5"/>
+<text x="245" y="392" font-size="10" font-family="Helvetica,Arial,sans-serif">+</text>
+<!-- Wire from D1 cathode (130,312) to (200,312) down to -IN (200,332) right to (240,332) -->
+<line x1="130" y1="312" x2="200" y2="312" stroke="black" stroke-width="1.5"/>
+<line x1="200" y1="312" x2="200" y2="332" stroke="black" stroke-width="1.5"/>
+<circle cx="200" cy="332" r="3.5" fill="black"/>
+<line x1="200" y1="332" x2="240" y2="332" stroke="black" stroke-width="1.5"/>
+<!-- +IN → GND -->
+<line x1="200" y1="388" x2="200" y2="500" stroke="black" stroke-width="1.5"/>
+<line x1="186" y1="500" x2="214" y2="500" stroke="black" stroke-width="1.5"/>
+<line x1="190" y1="506" x2="210" y2="506" stroke="black" stroke-width="1.5"/>
+<line x1="194" y1="512" x2="206" y2="512" stroke="black" stroke-width="1.5"/>
+<text x="218" y="508" font-size="10" font-family="Helvetica,Arial,sans-serif">GND</text>
+<!-- OUT wire right -->
+<line x1="370" y1="360" x2="430" y2="360" stroke="black" stroke-width="1.5"/>
+<!-- U1.A VCC (top of triangle, x=305,y=315) -->
+<line x1="305" y1="315" x2="305" y2="284" stroke="black" stroke-width="1.5"/>
+<polygon points="305,272 299,284 311,284" fill="black"/>
+<text x="312" y="278" font-size="10" font-family="Helvetica,Arial,sans-serif" font-weight="bold">VCC</text>
+<!-- U1.A GND (bottom x=305,y=405) -->
+<line x1="305" y1="405" x2="305" y2="432" stroke="black" stroke-width="1.5"/>
+<line x1="291" y1="432" x2="319" y2="432" stroke="black" stroke-width="1.5"/>
+<line x1="295" y1="438" x2="315" y2="438" stroke="black" stroke-width="1.5"/>
+<line x1="299" y1="444" x2="311" y2="444" stroke="black" stroke-width="1.5"/>
+<!-- U1.A label -->
+<text x="288" y="357" font-size="9.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">U1.A</text>
+<text x="282" y="369" font-size="8.5" font-family="Helvetica,Arial,sans-serif">MCP6022</text>
+
+<!-- ============ Rf & Cf FEEDBACK (FS1) ============ -->
+<!-- Feedback path: OUT(370,360) up to y=210, left to x=200, down to -IN(200,332) -->
+<!-- Vertical right side: (370,360) up to (370,210) -->
+<line x1="430" y1="360" x2="430" y2="210" stroke="black" stroke-width="1.5"/>
+<!-- Top horizontal: (430,210) left to (200,210) -->
+<line x1="200" y1="210" x2="430" y2="210" stroke="black" stroke-width="1.5"/>
+<!-- Vertical left side: (200,210) down to (200,332) [joins at junction] -->
+<line x1="200" y1="210" x2="200" y2="312" stroke="black" stroke-width="1.5"/>
+<!-- Rf = 1MΩ on top horizontal at center (315,210) -->
+<rect x="297" y="203" width="36" height="14" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="315" y="199" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">Rf = 1 MΩ (1%)</text>
+<!-- Cf = 10pF parallel path at y=235 -->
+<!-- Junction on right: (430,235) -->
+<circle cx="430" cy="235" r="3.5" fill="black"/>
+<line x1="430" y1="210" x2="430" y2="235" stroke="black" stroke-width="1.5"/>
+<!-- Junction on left: (200,235) -->
+<circle cx="200" cy="235" r="3.5" fill="black"/>
+<line x1="200" y1="210" x2="200" y2="235" stroke="black" stroke-width="1.5"/>
+<!-- Cf horizontal path at y=235 -->
+<line x1="200" y1="235" x2="294" y2="235" stroke="black" stroke-width="1.5"/>
+<!-- Cap plates -->
+<line x1="294" y1="222" x2="294" y2="248" stroke="black" stroke-width="2.5"/>
+<line x1="300" y1="222" x2="300" y2="248" stroke="black" stroke-width="2.5"/>
+<line x1="300" y1="235" x2="430" y2="235" stroke="black" stroke-width="1.5"/>
+<text x="315" y="255" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Cf = 10 pF</text>
+
+
+<!-- ============ SALLEN-KEY U1.B (FS2) ============ -->
+<!-- Signal: U1.A OUT at (430,360) → FS2 section -->
+<line x1="430" y1="360" x2="490" y2="360" stroke="black" stroke-width="1.5"/>
+<text x="440" y="355" font-size="9" font-family="Helvetica,Arial,sans-serif" fill="#1a4080">Vs_TIA</text>
+
+<!-- R_SK1 = 11kΩ at (530,360) -->
+<line x1="490" y1="360" x2="512" y2="360" stroke="black" stroke-width="1.5"/>
+<rect x="512" y="353" width="36" height="14" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="548" y1="360" x2="568" y2="360" stroke="black" stroke-width="1.5"/>
+<text x="530" y="348" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">R_SK1</text>
+<text x="530" y="378" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">11 kΩ (1%)</text>
+
+<!-- Node A at (568,360) -->
+<circle cx="568" cy="360" r="3.5" fill="black"/>
+
+<!-- R_SK2 = 11kΩ at (608,360) -->
+<line x1="568" y1="360" x2="590" y2="360" stroke="black" stroke-width="1.5"/>
+<rect x="590" y="353" width="36" height="14" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="626" y1="360" x2="646" y2="360" stroke="black" stroke-width="1.5"/>
+<text x="608" y="348" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">R_SK2</text>
+<text x="608" y="378" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">11 kΩ (1%)</text>
+
+<!-- Node B at (646,360): wire up to +IN of U1.B -->
+<circle cx="646" cy="360" r="3.5" fill="black"/>
+<line x1="646" y1="360" x2="646" y2="330" stroke="black" stroke-width="1.5"/>
+<!-- Horizontal to +IN -->
+<line x1="646" y1="330" x2="680" y2="330" stroke="black" stroke-width="1.5"/>
+
+<!-- C_SK2 = 144nF from Node B (646,360) down to GND -->
+<line x1="646" y1="360" x2="646" y2="390" stroke="black" stroke-width="1.5"/>
+<line x1="633" y1="390" x2="659" y2="390" stroke="black" stroke-width="2.5"/>
+<line x1="633" y1="397" x2="659" y2="397" stroke="black" stroke-width="2.5"/>
+<line x1="646" y1="397" x2="646" y2="500" stroke="black" stroke-width="1.5"/>
+<line x1="632" y1="500" x2="660" y2="500" stroke="black" stroke-width="1.5"/>
+<line x1="636" y1="506" x2="656" y2="506" stroke="black" stroke-width="1.5"/>
+<line x1="640" y1="512" x2="652" y2="512" stroke="black" stroke-width="1.5"/>
+<text x="665" y="395" font-size="9" font-family="Helvetica,Arial,sans-serif">C_SK2</text>
+<text x="665" y="406" font-size="9" font-family="Helvetica,Arial,sans-serif">144 nF</text>
+
+<!-- U1.B op-amp triangle: left at x=680, right tip at (800,360) -->
+<polygon points="680,315 680,405 800,360" fill="#f8f8ff" stroke="black" stroke-width="1.5"/>
+<!-- +IN upper at (680,330) -->
+<text x="685" y="333" font-size="10" font-family="Helvetica,Arial,sans-serif">+</text>
+<!-- -IN lower at (680,390) -->
+<line x1="660" y1="390" x2="680" y2="390" stroke="black" stroke-width="1.5"/>
+<text x="685" y="393" font-size="10" font-family="Helvetica,Arial,sans-serif">−</text>
+<!-- OUT wire -->
+<line x1="800" y1="360" x2="860" y2="360" stroke="black" stroke-width="1.5"/>
+<!-- U1.B VCC -->
+<line x1="740" y1="315" x2="740" y2="284" stroke="black" stroke-width="1.5"/>
+<polygon points="740,272 734,284 746,284" fill="black"/>
+<text x="747" y="278" font-size="10" font-family="Helvetica,Arial,sans-serif" font-weight="bold">VCC</text>
+<!-- U1.B GND -->
+<line x1="740" y1="405" x2="740" y2="432" stroke="black" stroke-width="1.5"/>
+<line x1="726" y1="432" x2="754" y2="432" stroke="black" stroke-width="1.5"/>
+<line x1="730" y1="438" x2="750" y2="438" stroke="black" stroke-width="1.5"/>
+<line x1="734" y1="444" x2="746" y2="444" stroke="black" stroke-width="1.5"/>
+<!-- U1.B label -->
+<text x="720" y="357" font-size="9.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">U1.B</text>
+<text x="714" y="369" font-size="8.5" font-family="Helvetica,Arial,sans-serif">MCP6022</text>
+
+<!-- -IN=OUT feedback for unity gain -->
+<!-- OUT(800,360) → right to (830,360) → down to (830,405) → left to (680,405) → up to (680,390) -->
+<line x1="800" y1="360" x2="830" y2="360" stroke="black" stroke-width="1.5"/>
+<circle cx="830" cy="360" r="3.5" fill="black"/>
+<line x1="830" y1="360" x2="830" y2="405" stroke="black" stroke-width="1.5"/>
+<line x1="680" y1="405" x2="830" y2="405" stroke="black" stroke-width="1.5"/>
+<line x1="680" y1="390" x2="680" y2="405" stroke="black" stroke-width="1.5"/>
+
+<!-- C_SK1 = 144nF: from Node A (568,360) up to y=235, right to (800,235), down to OUT(800,360) -->
+<line x1="568" y1="360" x2="568" y2="240" stroke="black" stroke-width="1.5"/>
+<line x1="568" y1="240" x2="730" y2="240" stroke="black" stroke-width="1.5"/>
+<!-- C_SK1 capacitor on horizontal path -->
+<line x1="730" y1="240" x2="800" y2="240" stroke="black" stroke-width="1.5"/>
+<line x1="720" y1="227" x2="720" y2="253" stroke="black" stroke-width="2.5"/>
+<line x1="726" y1="227" x2="726" y2="253" stroke="black" stroke-width="2.5"/>
+<line x1="568" y1="240" x2="720" y2="240" stroke="black" stroke-width="1.5"/>
+<text x="655" y="232" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">C_SK1 = 144 nF</text>
+<line x1="800" y1="240" x2="800" y2="360" stroke="black" stroke-width="1.5"/>
+<circle cx="800" cy="360" r="3.5" fill="black"/>
+
+<!-- Net label Vs after U1.B -->
+<text x="808" y="355" font-size="10" font-family="Helvetica,Arial,sans-serif" fill="#1a4080" font-weight="bold">Vs</text>
+
+
+<!-- ============ PROTECTION ADC (FS3) ============ -->
+<!-- Ra = 10kΩ horizontal from (860,360) -->
+<line x1="860" y1="360" x2="900" y2="360" stroke="black" stroke-width="1.5"/>
+<rect x="900" y="353" width="36" height="14" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="936" y1="360" x2="970" y2="360" stroke="black" stroke-width="1.5"/>
+<text x="918" y="348" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">Ra</text>
+<text x="918" y="378" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">10 kΩ</text>
+
+<!-- Node at (970,360) = Vmes_ADC -->
+<circle cx="970" cy="360" r="3.5" fill="black"/>
+<text x="975" y="352" font-size="10" font-family="Helvetica,Arial,sans-serif" fill="#c05000" font-weight="bold">Vmes</text>
+
+<!-- Rb = 10kΩ vertical down from (970,360) -->
+<line x1="970" y1="360" x2="970" y2="388" stroke="black" stroke-width="1.5"/>
+<rect x="963" y="388" width="14" height="36" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="970" y1="424" x2="970" y2="448" stroke="black" stroke-width="1.5"/>
+<line x1="956" y1="448" x2="984" y2="448" stroke="black" stroke-width="1.5"/>
+<line x1="960" y1="454" x2="980" y2="454" stroke="black" stroke-width="1.5"/>
+<line x1="964" y1="460" x2="976" y2="460" stroke="black" stroke-width="1.5"/>
+<text x="988" y="406" font-size="9.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Rb</text>
+<text x="988" y="418" font-size="9" font-family="Helvetica,Arial,sans-serif">10 kΩ</text>
+<text x="990" y="455" font-size="10" font-family="Helvetica,Arial,sans-serif">GND</text>
+
+<!-- Wire from Vmes to FS6 -->
+<line x1="970" y1="360" x2="1108" y2="360" stroke="black" stroke-width="1.5" stroke-dasharray="5,3"/>
+<text x="1020" y="352" font-size="9.5" font-family="Helvetica,Arial,sans-serif" fill="#c05000">→ GPIO3</text>
+
+
+<!-- ============ ESP32-C3 (FS6) ============ -->
+<!-- AMS1117-3.3 regulator -->
+<rect x="1140" y="96" width="80" height="50" fill="#fff8f0" stroke="#770090" stroke-width="1.5" rx="4"/>
+<text x="1180" y="115" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">AMS1117</text>
+<text x="1180" y="127" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">-3.3 V</text>
+<text x="1180" y="139" font-size="8.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" fill="#770090">Régulateur LDO</text>
+<!-- VCC in -->
+<line x1="1130" y1="121" x2="1140" y2="121" stroke="black" stroke-width="1.5"/>
+<polygon points="1120,121 1130,116 1130,126" fill="black"/>
+<text x="1118" y="116" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">5 V</text>
+<!-- 3.3V out -->
+<line x1="1220" y1="121" x2="1260" y2="121" stroke="black" stroke-width="1.5"/>
+<text x="1230" y="116" font-size="9" font-family="Helvetica,Arial,sans-serif" fill="#770090">3.3 V</text>
+<!-- C_reg decoupling -->
+<line x1="1260" y1="121" x2="1260" y2="100" stroke="black" stroke-width="1.5"/>
+<line x1="1272" y1="121" x2="1272" y2="100" stroke="black" stroke-width="1.5"/>
+<line x1="1260" y1="100" x2="1260" y2="90" stroke="black" stroke-width="1.5"/>
+<polygon points="1260,82 1254,90 1266,90" fill="#770090"/>
+<text x="1275" y="95" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#770090">VDD(3.3V)</text>
+<line x1="1248" y1="100" x2="1284" y2="100" stroke="black" stroke-width="2"/>
+<line x1="1248" y1="107" x2="1284" y2="107" stroke="black" stroke-width="2"/>
+<text x="1287" y="105" font-size="8.5" font-family="Helvetica,Arial,sans-serif">C 100nF</text>
+<line x1="1272" y1="107" x2="1272" y2="145" stroke="black" stroke-width="1.5"/>
+<line x1="1258" y1="145" x2="1286" y2="145" stroke="black" stroke-width="1.5"/>
+<line x1="1262" y1="151" x2="1282" y2="151" stroke="black" stroke-width="1.5"/>
+<line x1="1266" y1="157" x2="1278" y2="157" stroke="black" stroke-width="1.5"/>
+
+<!-- ESP32-C3 IC block -->
+<rect x="1130" y="200" width="310" height="380" fill="#faf0ff" stroke="#770090" stroke-width="2" rx="6"/>
+<text x="1285" y="222" font-size="12" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold" fill="#770090">ESP32-C3</text>
+<text x="1285" y="238" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" fill="#770090">RISC-V 160 MHz — Wi-Fi 2.4 GHz</text>
+
+<!-- Left pins of ESP32 -->
+<!-- VDD -->
+<line x1="1108" y1="260" x2="1130" y2="260" stroke="#770090" stroke-width="1.5"/>
+<text x="1126" y="256" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end" fill="#770090">VDD</text>
+<text x="1136" y="256" font-size="9" font-family="Helvetica,Arial,sans-serif">VDD 3.3V</text>
+<!-- GND -->
+<line x1="1108" y1="290" x2="1130" y2="290" stroke="black" stroke-width="1.5"/>
+<text x="1126" y="286" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">GND</text>
+<text x="1136" y="286" font-size="9" font-family="Helvetica,Arial,sans-serif">GND</text>
+<!-- GPIO3 = ADC input luminosité -->
+<line x1="1108" y1="360" x2="1130" y2="360" stroke="#c05000" stroke-width="2"/>
+<circle cx="1108" cy="360" r="3.5" fill="#c05000"/>
+<text x="1126" y="355" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end" fill="#c05000">GPIO3</text>
+<text x="1136" y="355" font-size="9" font-family="Helvetica,Arial,sans-serif" fill="#c05000">ADC1_CH3 ← Luminosité</text>
+<!-- GPIO2 = autre capteur -->
+<line x1="1108" y1="390" x2="1130" y2="390" stroke="#333" stroke-width="1.5" stroke-dasharray="4,2"/>
+<text x="1126" y="385" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">GPIO2</text>
+<text x="1136" y="385" font-size="9" font-family="Helvetica,Arial,sans-serif" fill="#555">ADC1_CH2 ← Température</text>
+<!-- TX/RX UART -->
+<line x1="1108" y1="430" x2="1130" y2="430" stroke="#333" stroke-width="1.5"/>
+<text x="1126" y="426" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">TX</text>
+<text x="1136" y="426" font-size="9" font-family="Helvetica,Arial,sans-serif">UART TX</text>
+<line x1="1108" y1="455" x2="1130" y2="455" stroke="#333" stroke-width="1.5"/>
+<text x="1126" y="451" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">RX</text>
+<text x="1136" y="451" font-size="9" font-family="Helvetica,Arial,sans-serif">UART RX</text>
+
+<!-- Wi-Fi antenna annotation (right side) -->
+<line x1="1440" y1="320" x2="1490" y2="320" stroke="#770090" stroke-width="2" stroke-dasharray="3,2"/>
+<text x="1445" y="314" font-size="9" fill="#770090" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Wi-Fi 2.4 GHz</text>
+<text x="1445" y="327" font-size="8.5" fill="#770090" font-family="Helvetica,Arial,sans-serif">Serveur HTTP</text>
+<!-- Antenna symbol -->
+<line x1="1490" y1="310" x2="1490" y2="335" stroke="#770090" stroke-width="2"/>
+<line x1="1490" y1="310" x2="1480" y2="295" stroke="#770090" stroke-width="1.5"/>
+<line x1="1490" y1="310" x2="1500" y2="295" stroke="#770090" stroke-width="1.5"/>
+<line x1="1490" y1="310" x2="1485" y2="300" stroke="#770090" stroke-width="1"/>
+<line x1="1490" y1="310" x2="1495" y2="300" stroke="#770090" stroke-width="1"/>
+
+<!-- Note firmware -->
+<rect x="1115" y="595" width="310" height="70" fill="#fff0ff" stroke="#770090" stroke-width="1" stroke-dasharray="4,3" rx="3"/>
+<text x="1270" y="612" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold" fill="#770090">Note Firmware</text>
+<text x="1121" y="628" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#444">• Crée un point d'accès Wi-Fi (AP mode)</text>
+<text x="1121" y="642" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#444">• Serveur HTTP — page Web temps réel</text>
+<text x="1121" y="656" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#444">• Affiche luminosité (lux) + temp (°C)</text>
+
+<!-- UART Connector -->
+<rect x="1115" y="685" width="160" height="48" fill="white" stroke="#333" stroke-width="1.5" rx="3"/>
+<text x="1195" y="699" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">J_UART — Debug</text>
+<text x="1121" y="714" font-size="8.5" font-family="Helvetica,Arial,sans-serif">1:TX  2:RX  3:GND  4:3V3</text>
+<text x="1121" y="726" font-size="8" font-family="Helvetica,Arial,sans-serif" fill="#555">(adaptateur USB-UART ext.)</text>
+
+
+<!-- ============ TITLE BLOCK ============ -->
+<rect x="1" y="888" width="1518" height="90" fill="none" stroke="#333" stroke-width="1"/>
+<line x1="400" y1="888" x2="400" y2="978" stroke="#333" stroke-width="1"/>
+<line x1="800" y1="888" x2="800" y2="978" stroke="#333" stroke-width="1"/>
+<line x1="1100" y1="888" x2="1100" y2="978" stroke="#333" stroke-width="1"/>
+<line x1="1300" y1="888" x2="1300" y2="978" stroke="#333" stroke-width="1"/>
+<text x="200" y="915" font-size="11" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">SCHÉMA 1 — CAPTEUR DE LUMINOSITÉ</text>
+<text x="200" y="932" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Transimpédance + Sallen-Key + ESP32-C3</text>
+<text x="200" y="965" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" fill="#555">Composants clés : Photodiode, MCP6022 (x2), ESP32-C3</text>
+<text x="600" y="915" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">Projet — 1DA TP2</text>
+<text x="600" y="935" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Station de Mesure Multi-Capteurs</text>
+<text x="950" y="920" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Date : 2025</text>
+<text x="950" y="940" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Version : v2.0</text>
+<text x="1200" y="920" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">VCC = 3.3 V</text>
+<text x="1200" y="940" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">GND commun</text>
+<text x="1400" y="920" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Feuille 1/2</text>
+<text x="1400" y="940" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Échelle: N/A</text>
+
+</svg>
+</div>
+</div>
+
+<!-- ===================== SCHÉMA TEMPÉRATURE ===================== -->
+<div id="p1" class="page">
+<div class="wrap">
+<svg width="1520" height="980" viewBox="0 0 1520 980" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="lc" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#333"/></marker>
+</defs>
+<rect width="1520" height="980" fill="white"/>
+
+<!-- ============ BLOCS FONCTIONNELS ============ -->
+<!-- FS1 Source courant + capteur -->
+<rect x="28" y="108" width="280" height="540" fill="none" stroke="#1a4080" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="28" y="108" width="250" height="18" fill="#1a4080" rx="2"/>
+<text x="34" y="121" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS1 — Capteur PN + Source I_cst</text>
+
+<!-- FS2 VCOM TL431 -->
+<rect x="28" y="668" width="280" height="110" fill="none" stroke="#1a8040" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="28" y="668" width="205" height="18" fill="#1a8040" rx="2"/>
+<text x="34" y="681" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS2 — Référence VCOM (TL431)</text>
+
+<!-- FS3 Ampli différentiel -->
+<rect x="328" y="108" width="320" height="540" fill="none" stroke="#1a4080" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="328" y="108" width="280" height="18" fill="#1a4080" rx="2"/>
+<text x="334" y="121" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS3 — Amplificateur Différentiel U1.A</text>
+
+<!-- FS4 Filtre anti-repliement -->
+<rect x="668" y="108" width="308" height="540" fill="none" stroke="#1a4080" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="668" y="108" width="290" height="18" fill="#1a4080" rx="2"/>
+<text x="674" y="121" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS4 — Filtre Actif Anti-Repliement U1.B</text>
+
+<!-- FS5 Protection ADC -->
+<rect x="990" y="238" width="192" height="210" fill="none" stroke="#c05000" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="990" y="238" width="158" height="18" fill="#c05000" rx="2"/>
+<text x="996" y="251" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS5 — Protection ADC (÷2)</text>
+
+<!-- FS6 ESP32 -->
+<rect x="1198" y="68" width="300" height="672" fill="none" stroke="#770090" stroke-width="1.5" stroke-dasharray="9,4" rx="4"/>
+<rect x="1198" y="68" width="270" height="18" fill="#770090" rx="2"/>
+<text x="1204" y="81" font-size="10.5" fill="white" font-weight="bold" font-family="Helvetica,Arial,sans-serif">FS6 — Microcontrôleur ESP32-C3</text>
+
+
+<!-- ============ FS1: CAPTEUR PN + MIROIR DE COURANT ============ -->
+<!-- R_set = 33kΩ pour courant ~100µA -->
+<!-- Q1 NPN (transistor de référence) à gauche -->
+<!-- Q2 NPN (transistor miroir) à droite → fournit courant à D1 -->
+
+<!-- VCC sources -->
+<line x1="80" y1="160" x2="80" y2="148" stroke="black" stroke-width="1.5"/>
+<polygon points="80,136 74,148 86,148" fill="black"/>
+<text x="88" y="142" font-size="10" font-family="Helvetica,Arial,sans-serif" font-weight="bold">VCC</text>
+
+<line x1="220" y1="160" x2="220" y2="148" stroke="black" stroke-width="1.5"/>
+<polygon points="220,136 214,148 226,148" fill="black"/>
+<text x="228" y="142" font-size="10" font-family="Helvetica,Arial,sans-serif" font-weight="bold">VCC</text>
+
+<!-- R_set = 33kΩ from VCC to Q1 collector -->
+<line x1="80" y1="160" x2="80" y2="178" stroke="black" stroke-width="1.5"/>
+<rect x="73" y="178" width="14" height="36" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="80" y1="214" x2="80" y2="250" stroke="black" stroke-width="1.5"/>
+<text x="98" y="196" font-size="9.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">R_set</text>
+<text x="98" y="208" font-size="9" font-family="Helvetica,Arial,sans-serif">33 kΩ (1%)</text>
+<text x="98" y="220" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#555">I_ref≈100µA</text>
+
+<!-- Q1 NPN transistor (simplified symbol) at (80,270) -->
+<!-- Collector: top at (80,250) -->
+<!-- Base: left at (60,280) -->  
+<!-- Emitter: bottom at (80,310) -->
+<line x1="60" y1="270" x2="76" y2="270" stroke="black" stroke-width="1.5"/>
+<line x1="76" y1="255" x2="76" y2="295" stroke="black" stroke-width="2"/>
+<line x1="76" y1="262" x2="80" y2="250" stroke="black" stroke-width="1.5"/>
+<line x1="76" y1="278" x2="80" y2="290" stroke="black" stroke-width="1.5"/>
+<!-- Emitter arrow (NPN: out from base) -->
+<polygon points="80,290 70,286 77,295" fill="black"/>
+<text x="36" y="274" font-size="9.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Q1</text>
+<text x="36" y="284" font-size="8.5" font-family="Helvetica,Arial,sans-serif">BC547</text>
+
+<!-- Q1 Base tied to Collector (diode-connected) -->
+<line x1="60" y1="270" x2="60" y2="250" stroke="black" stroke-width="1.5"/>
+<circle cx="60" cy="250" r="3" fill="black"/>
+<line x1="60" y1="250" x2="80" y2="250" stroke="black" stroke-width="1.5"/>
+<!-- Wire from base-collector junction to Q2 base -->
+<line x1="60" y1="250" x2="60" y2="330" stroke="black" stroke-width="1.5"/>
+<line x1="60" y1="330" x2="170" y2="330" stroke="black" stroke-width="1.5"/>
+
+<!-- Q1 Emitter to GND -->
+<line x1="80" y1="290" x2="80" y2="360" stroke="black" stroke-width="1.5"/>
+
+<!-- Q2 NPN transistor (mirror output) at (220,270) -->
+<line x1="200" y1="270" x2="216" y2="270" stroke="black" stroke-width="1.5"/>
+<line x1="216" y1="255" x2="216" y2="295" stroke="black" stroke-width="2"/>
+<line x1="216" y1="262" x2="220" y2="250" stroke="black" stroke-width="1.5"/>
+<line x1="216" y1="278" x2="220" y2="290" stroke="black" stroke-width="1.5"/>
+<polygon points="220,290 210,286 217,295" fill="black"/>
+<text x="232" y="274" font-size="9.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Q2</text>
+<text x="232" y="284" font-size="8.5" font-family="Helvetica,Arial,sans-serif">BC547</text>
+
+<!-- Q2 Base from Q1 base-collector -->
+<line x1="170" y1="330" x2="200" y2="330" stroke="black" stroke-width="1.5"/>
+<line x1="200" y1="270" x2="200" y2="330" stroke="black" stroke-width="1.5"/>
+
+<!-- Q2 Collector to VCC (220,160 to 220,250) -->
+<line x1="220" y1="160" x2="220" y2="250" stroke="black" stroke-width="1.5"/>
+
+<!-- Node: Q2 Collector connects to D1 (constant current output) -->
+<circle cx="220" cy="360" r="3.5" fill="black"/>
+<line x1="220" y1="290" x2="220" y2="360" stroke="black" stroke-width="1.5"/>
+<text x="230" y="330" font-size="9" font-family="Helvetica,Arial,sans-serif" fill="#1a4080">I_cst</text>
+<text x="230" y="342" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#555">≈ 100 µA</text>
+
+<!-- Q1,Q2 emitters join to GND -->
+<line x1="80" y1="360" x2="220" y2="360" stroke="black" stroke-width="1.5"/>
+<line x1="150" y1="360" x2="150" y2="382" stroke="black" stroke-width="1.5"/>
+<line x1="136" y1="382" x2="164" y2="382" stroke="black" stroke-width="1.5"/>
+<line x1="140" y1="388" x2="160" y2="388" stroke="black" stroke-width="1.5"/>
+<line x1="144" y1="394" x2="156" y2="394" stroke="black" stroke-width="1.5"/>
+<text x="168" y="390" font-size="10" font-family="Helvetica,Arial,sans-serif">GND</text>
+
+<!-- D1: 1N914 diode sensor (vertical), anode at top (from Q2 collector), cathode at bottom -->
+<!-- Conventional: anode at top = VCC side coming down; cathode → VCOM -->
+<!-- Actually: diode PN sensor: anode connected to current source (Q2 collector), cathode to VCOM/GND reference -->
+<!-- So: Q2 collector at (220,360) → wire down to D1 anode -->
+<line x1="220" y1="360" x2="220" y2="430" stroke="black" stroke-width="1.5"/>
+<!-- D1 symbol (vertical, anode top, cathode bottom): pointing down (current flows down) -->
+<!-- Triangle pointing down: base at top, tip at bottom -->
+<polygon points="208,430 232,430 220,470" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="208" y1="470" x2="232" y2="470" stroke="black" stroke-width="2"/>
+<!-- Cathode wire down to reference/VCOM line -->
+<line x1="220" y1="470" x2="220" y2="530" stroke="black" stroke-width="1.5"/>
+<!-- D1 label -->
+<text x="238" y="452" font-size="10.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">D1</text>
+<text x="238" y="464" font-size="9.5" font-family="Helvetica,Arial,sans-serif">1N914</text>
+<text x="238" y="477" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#555">V_D = f(T)</text>
+<text x="238" y="489" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#1a4080">ΔV ≈ −2mV/°C</text>
+
+<!-- V_D node: output of D1 going to differential amp -IN -->
+<circle cx="220" cy="530" r="3.5" fill="black"/>
+<line x1="220" y1="530" x2="328" y2="530" stroke="black" stroke-width="1.5"/>
+<text x="240" y="522" font-size="9.5" font-family="Helvetica,Arial,sans-serif" fill="#1a4080">V_D</text>
+
+<!-- VCOM goes to cathode of D1 -->
+<!-- Actually: cathode → reference: let's connect it to VCOM from FS2 -->
+<text x="38" y="548" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#1a8040">← VCOM (de FS2)</text>
+<line x1="38" y1="555" x2="220" y2="555" stroke="#1a8040" stroke-width="1" stroke-dasharray="5,3"/>
+
+
+<!-- ============ FS2: VCOM REFERENCE TL431 ============ -->
+<!-- TL431 precision reference -->
+<rect x="50" y="695" width="60" height="50" fill="#f0fff0" stroke="#1a8040" stroke-width="1.5" rx="4"/>
+<text x="80" y="715" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">TL431</text>
+<text x="80" y="728" font-size="8.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">2.5 V ref</text>
+<!-- Voltage divider to get VCOM = 1.65V -->
+<!-- R_v1 from VCC to TL431 ref pin -->
+<line x1="80" y1="695" x2="80" y2="680" stroke="black" stroke-width="1.5"/>
+<line x1="80" y1="680" x2="50" y2="680" stroke="black" stroke-width="1.5"/>
+<polygon points="40,680 50,675 50,685" fill="black"/>
+<text x="38" y="676" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">VCC</text>
+<!-- R_v1 vertical: -->
+<line x1="160" y1="680" x2="160" y2="698" stroke="black" stroke-width="1.5"/>
+<rect x="153" y="698" width="14" height="30" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="160" y1="728" x2="160" y2="748" stroke="black" stroke-width="1.5"/>
+<text x="178" y="710" font-size="9" font-family="Helvetica,Arial,sans-serif">R_v1</text>
+<text x="178" y="722" font-size="9" font-family="Helvetica,Arial,sans-serif">10 kΩ</text>
+<!-- R_v2 from TL431 cathode to GND -->
+<rect x="153" y="748" width="14" height="30" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="160" y1="778" x2="160" y2="758" stroke="black" stroke-width="1.5"/>
+<line x1="160" y1="748" x2="160" y2="728" stroke="black" stroke-width="1.5"/>
+<line x1="160" y1="778" x2="160" y2="790" stroke="black" stroke-width="1.5"/>
+<line x1="146" y1="790" x2="174" y2="790" stroke="black" stroke-width="1.5"/>
+<line x1="150" y1="796" x2="170" y2="796" stroke="black" stroke-width="1.5"/>
+<line x1="154" y1="802" x2="166" y2="802" stroke="black" stroke-width="1.5"/>
+<text x="178" y="762" font-size="9" font-family="Helvetica,Arial,sans-serif">R_v2</text>
+<text x="178" y="774" font-size="9" font-family="Helvetica,Arial,sans-serif">10 kΩ</text>
+<!-- C_vcom filter -->
+<line x1="220" y1="740" x2="207" y2="740" stroke="black" stroke-width="1.5"/>
+<line x1="207" y1="727" x2="207" y2="753" stroke="black" stroke-width="2.5"/>
+<line x1="213" y1="727" x2="213" y2="753" stroke="black" stroke-width="2.5"/>
+<line x1="213" y1="740" x2="220" y2="740" stroke="black" stroke-width="1.5"/>
+<line x1="220" y1="740" x2="220" y2="760" stroke="black" stroke-width="1.5"/>
+<line x1="206" y1="760" x2="234" y2="760" stroke="black" stroke-width="1.5"/>
+<line x1="210" y1="766" x2="230" y2="766" stroke="black" stroke-width="1.5"/>
+<line x1="214" y1="772" x2="226" y2="772" stroke="black" stroke-width="1.5"/>
+<text x="228" y="735" font-size="8.5" font-family="Helvetica,Arial,sans-serif">C_vcom 100nF</text>
+<!-- VCOM node and wire -->
+<circle cx="160" cy="728" r="3.5" fill="#1a8040"/>
+<line x1="160" y1="680" x2="160" y2="728" stroke="black" stroke-width="1.5"/>
+<text x="165" y="725" font-size="9.5" font-family="Helvetica,Arial,sans-serif" fill="#1a8040" font-weight="bold">VCOM = 1.65V</text>
+<line x1="160" y1="680" x2="220" y2="680" stroke="black" stroke-width="1.5"/>
+<line x1="220" y1="680" x2="220" y2="740" stroke="black" stroke-width="1.5"/>
+<circle cx="220" cy="740" r="3" fill="black"/>
+<line x1="160" y1="728" x2="160" y2="748" stroke="black" stroke-width="1.5"/>
+
+
+<!-- ============ FS3: AMPLI DIFFÉRENTIEL U1.A ============ -->
+<!-- Soustracteur: Gain = R_b/R_a = 10k/10k = 1 (or higher for more gain) -->
+<!-- V+ input: VCOM via R3 -->
+<!-- V- input: V_D (from D1) via R1 -->
+<!-- Outputs: Vout = (V_D - VCOM) * Gain -->
+
+<!-- VCOM wire to +IN via R3 -->
+<!-- R1 = 10kΩ from VCOM to +IN -->
+<line x1="348" y1="360" x2="368" y2="360" stroke="black" stroke-width="1.5"/>
+<rect x="368" y="353" width="36" height="14" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="404" y1="360" x2="430" y2="360" stroke="black" stroke-width="1.5"/>
+<text x="386" y="347" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">R1</text>
+<text x="386" y="375" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">10 kΩ (1%)</text>
+<!-- VCOM label on this wire -->
+<text x="338" y="356" font-size="9" font-family="Helvetica,Arial,sans-serif" fill="#1a8040" font-weight="bold">VCOM</text>
+<line x1="328" y1="360" x2="348" y2="360" stroke="#1a8040" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+<!-- R2 = 10kΩ from VCOM to -IN (+IN of soustracteur = -IN here means inverting) -->
+<!-- Let me redo: for a differential amplifier (soustracteur): -->
+<!-- V+ input (non-inv) ← VCOM via R3(10k), R4(10k) to GND -->
+<!-- V- input (inv) ← V_D via R1(10k), R2(10k) feedback -->
+
+<!-- Actually: standard differential amp: -->
+<!-- R1 from V1 (V_D) to -IN -->
+<!-- Rf (R2=10k) from -IN to OUT (feedback) -->
+<!-- R3 from V2 (VCOM) to +IN -->
+<!-- R4 from +IN to GND (= R3 for balanced) -->
+<!-- Gain = Rf/R1 = 1 (can increase Rf for more gain, e.g. R2=100k for gain=10) -->
+
+<!-- Wire from V_D (220,530) to (328,530) already done above -->
+<!-- R_diff1 = 10kΩ from V_D to -IN of U1.A -->
+<line x1="328" y1="530" x2="368" y2="530" stroke="black" stroke-width="1.5"/>
+<rect x="368" y="523" width="36" height="14" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="404" y1="530" x2="450" y2="530" stroke="black" stroke-width="1.5"/>
+<text x="386" y="518" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">R_diff1</text>
+<text x="386" y="545" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">10 kΩ (1%)</text>
+
+<!-- U1.A differential amp opamp at center (530, 445): -->
+<!-- Triangle: (470,395) (470,495) (590,445) -->
+<polygon points="470,395 470,495 590,445" fill="#f8f8ff" stroke="black" stroke-width="1.5"/>
+<!-- +IN upper at (470,415): from R1 path at (430,360) → down to (430,415) → right to (470,415) -->
+<line x1="430" y1="360" x2="430" y2="415" stroke="black" stroke-width="1.5"/>
+<line x1="430" y1="415" x2="470" y2="415" stroke="black" stroke-width="1.5"/>
+<text x="475" y="418" font-size="10" font-family="Helvetica,Arial,sans-serif">+</text>
+<!-- -IN lower at (470,475): from R_diff1 path at (450,530) → up to (450,475) → right to (470,475) -->
+<line x1="450" y1="530" x2="450" y2="475" stroke="black" stroke-width="1.5"/>
+<line x1="450" y1="475" x2="470" y2="475" stroke="black" stroke-width="1.5"/>
+<text x="475" y="478" font-size="10" font-family="Helvetica,Arial,sans-serif">−</text>
+<!-- OUT -->
+<line x1="590" y1="445" x2="648" y2="445" stroke="black" stroke-width="1.5"/>
+
+<!-- R_diff2 = 10kΩ feedback from OUT to -IN -->
+<!-- Path: (590,445) → up to (590,360) → left to (450,360) → down to (450,475) -->
+<line x1="590" y1="445" x2="590" y2="360" stroke="black" stroke-width="1.5"/>
+<line x1="450" y1="360" x2="590" y2="360" stroke="black" stroke-width="1.5"/>
+<circle cx="590" cy="360" r="3.5" fill="black"/>
+<circle cx="450" cy="360" r="3.5" fill="black"/>
+<line x1="450" y1="360" x2="450" y2="475" stroke="black" stroke-width="1.5"/>
+<!-- Rf rect on the horizontal -->
+<rect x="498" y="353" width="36" height="14" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="450" y1="360" x2="498" y2="360" stroke="black" stroke-width="1.5"/>
+<line x1="534" y1="360" x2="590" y2="360" stroke="black" stroke-width="1.5"/>
+<text x="516" y="348" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">R_diff2</text>
+<text x="516" y="343" font-size="8.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">10 kΩ (1%)</text>
+
+<!-- R3 = 10kΩ from +IN to GND -->
+<line x1="430" y1="415" x2="430" y2="380" stroke="black" stroke-width="1.5"/>
+<!-- R3 -->
+<rect x="423" y="310" width="14" height="36" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="430" y1="310" x2="430" y2="280" stroke="black" stroke-width="1.5"/>
+<line x1="430" y1="380" x2="430" y2="346" stroke="black" stroke-width="1.5"/>
+<text x="448" y="325" font-size="9" font-family="Helvetica,Arial,sans-serif" font-weight="bold">R3</text>
+<text x="448" y="337" font-size="9" font-family="Helvetica,Arial,sans-serif">10 kΩ</text>
+<!-- VCOM on top of R3 -->
+<polygon points="430,270 424,282 436,282" fill="#1a8040"/>
+<text x="438" y="274" font-size="9.5" font-family="Helvetica,Arial,sans-serif" fill="#1a8040" font-weight="bold">VCOM</text>
+
+<!-- U1.A VCC/GND -->
+<line x1="530" y1="395" x2="530" y2="370" stroke="black" stroke-width="1.5"/>
+<polygon points="530,358 524,370 536,370" fill="black"/>
+<text x="536" y="364" font-size="10" font-family="Helvetica,Arial,sans-serif" font-weight="bold">VCC</text>
+<line x1="530" y1="495" x2="530" y2="522" stroke="black" stroke-width="1.5"/>
+<line x1="516" y1="522" x2="544" y2="522" stroke="black" stroke-width="1.5"/>
+<line x1="520" y1="528" x2="540" y2="528" stroke="black" stroke-width="1.5"/>
+<line x1="524" y1="534" x2="536" y2="534" stroke="black" stroke-width="1.5"/>
+<!-- U1.A label -->
+<text x="510" y="442" font-size="9.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">U1.A</text>
+<text x="504" y="454" font-size="8.5" font-family="Helvetica,Arial,sans-serif">MCP6022</text>
+
+
+<!-- ============ FS4: FILTRE ANTI-REPLIEMENT U1.B ============ -->
+<!-- U1.B: simple RC + buffer with gain 1 -->
+<!-- Input: from U1.A OUT at (648, 445) -->
+<!-- R_f = 10kΩ series -->
+<!-- C_f = 100nF to GND -->
+<!-- U1.B as buffer (unity gain) -->
+
+<!-- R_f = 10kΩ -->
+<line x1="648" y1="445" x2="688" y2="445" stroke="black" stroke-width="1.5"/>
+<rect x="688" y="438" width="36" height="14" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="724" y1="445" x2="760" y2="445" stroke="black" stroke-width="1.5"/>
+<text x="706" y="432" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">R_f</text>
+<text x="706" y="462" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">10 kΩ (1%)</text>
+
+<!-- Node at (760,445): C_f to GND + wire to +IN of U1.B -->
+<circle cx="760" cy="445" r="3.5" fill="black"/>
+<!-- C_f = 100nF vertical down to GND -->
+<line x1="760" y1="445" x2="760" y2="468" stroke="black" stroke-width="1.5"/>
+<line x1="747" y1="468" x2="773" y2="468" stroke="black" stroke-width="2.5"/>
+<line x1="747" y1="475" x2="773" y2="475" stroke="black" stroke-width="2.5"/>
+<line x1="760" y1="475" x2="760" y2="550" stroke="black" stroke-width="1.5"/>
+<line x1="746" y1="550" x2="774" y2="550" stroke="black" stroke-width="1.5"/>
+<line x1="750" y1="556" x2="770" y2="556" stroke="black" stroke-width="1.5"/>
+<line x1="754" y1="562" x2="766" y2="562" stroke="black" stroke-width="1.5"/>
+<text x="778" y="473" font-size="9" font-family="Helvetica,Arial,sans-serif">C_f</text>
+<text x="778" y="484" font-size="9" font-family="Helvetica,Arial,sans-serif">100 nF</text>
+<text x="778" y="496" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#555">fc≈160Hz</text>
+
+<!-- Wire from (760,445) to +IN of U1.B -->
+<line x1="760" y1="445" x2="810" y2="445" stroke="black" stroke-width="1.5"/>
+<line x1="810" y1="445" x2="810" y2="415" stroke="black" stroke-width="1.5"/>
+<line x1="810" y1="415" x2="840" y2="415" stroke="black" stroke-width="1.5"/>
+
+<!-- U1.B opamp (buffer): (840,395) (840,495) (960,445) -->
+<polygon points="840,395 840,495 960,445" fill="#f8f8ff" stroke="black" stroke-width="1.5"/>
+<!-- +IN at (840,415) -->
+<text x="845" y="418" font-size="10" font-family="Helvetica,Arial,sans-serif">+</text>
+<!-- -IN at (840,475) -->
+<line x1="820" y1="475" x2="840" y2="475" stroke="black" stroke-width="1.5"/>
+<text x="845" y="478" font-size="10" font-family="Helvetica,Arial,sans-serif">−</text>
+<!-- OUT -->
+<line x1="960" y1="445" x2="990" y2="445" stroke="black" stroke-width="1.5"/>
+<!-- Unity gain feedback: OUT → -IN -->
+<line x1="990" y1="445" x2="1010" y2="445" stroke="black" stroke-width="1.5"/>
+<circle cx="1010" cy="445" r="3.5" fill="black"/>
+<line x1="1010" y1="445" x2="1010" y2="485" stroke="black" stroke-width="1.5"/>
+<line x1="820" y1="485" x2="1010" y2="485" stroke="black" stroke-width="1.5"/>
+<line x1="820" y1="475" x2="820" y2="485" stroke="black" stroke-width="1.5"/>
+
+<!-- U1.B VCC/GND -->
+<line x1="900" y1="395" x2="900" y2="372" stroke="black" stroke-width="1.5"/>
+<polygon points="900,360 894,372 906,372" fill="black"/>
+<text x="908" y="366" font-size="10" font-family="Helvetica,Arial,sans-serif" font-weight="bold">VCC</text>
+<line x1="900" y1="495" x2="900" y2="522" stroke="black" stroke-width="1.5"/>
+<line x1="886" y1="522" x2="914" y2="522" stroke="black" stroke-width="1.5"/>
+<line x1="890" y1="528" x2="910" y2="528" stroke="black" stroke-width="1.5"/>
+<line x1="894" y1="534" x2="906" y2="534" stroke="black" stroke-width="1.5"/>
+<!-- U1.B label -->
+<text x="880" y="442" font-size="9.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">U1.B</text>
+<text x="874" y="454" font-size="8.5" font-family="Helvetica,Arial,sans-serif">MCP6022</text>
+
+<!-- Net label Vs after U1.B -->
+<text x="968" y="440" font-size="10" font-family="Helvetica,Arial,sans-serif" fill="#1a4080" font-weight="bold">Vs_T</text>
+
+
+<!-- ============ FS5: PROTECTION ADC ============ -->
+<!-- Ra = 10kΩ horizontal from (1010,445) to (1010,360 area) -->
+<line x1="1010" y1="445" x2="1002" y2="445" stroke="black" stroke-width="1.5"/>
+<line x1="1002" y1="445" x2="1002" y2="360" stroke="black" stroke-width="1.5"/>
+<line x1="1002" y1="360" x2="1040" y2="360" stroke="black" stroke-width="1.5"/>
+<rect x="1040" y="353" width="36" height="14" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="1076" y1="360" x2="1110" y2="360" stroke="black" stroke-width="1.5"/>
+<text x="1058" y="347" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">Ra</text>
+<text x="1058" y="378" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">10 kΩ</text>
+
+<!-- Node Vmes -->
+<circle cx="1110" cy="360" r="3.5" fill="black"/>
+<text x="1115" y="352" font-size="10" font-family="Helvetica,Arial,sans-serif" fill="#c05000" font-weight="bold">Vmes</text>
+
+<!-- Rb vertical -->
+<line x1="1110" y1="360" x2="1110" y2="390" stroke="black" stroke-width="1.5"/>
+<rect x="1103" y="390" width="14" height="36" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="1110" y1="426" x2="1110" y2="448" stroke="black" stroke-width="1.5"/>
+<line x1="1096" y1="448" x2="1124" y2="448" stroke="black" stroke-width="1.5"/>
+<line x1="1100" y1="454" x2="1120" y2="454" stroke="black" stroke-width="1.5"/>
+<line x1="1104" y1="460" x2="1116" y2="460" stroke="black" stroke-width="1.5"/>
+<text x="1128" y="408" font-size="9.5" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Rb</text>
+<text x="1128" y="420" font-size="9" font-family="Helvetica,Arial,sans-serif">10 kΩ</text>
+<text x="1128" y="456" font-size="10" font-family="Helvetica,Arial,sans-serif">GND</text>
+
+<!-- Wire from Vmes to FS6 GPIO2 -->
+<line x1="1110" y1="360" x2="1198" y2="360" stroke="black" stroke-width="1.5" stroke-dasharray="5,3"/>
+<text x="1130" y="352" font-size="9.5" font-family="Helvetica,Arial,sans-serif" fill="#c05000">→ GPIO2</text>
+
+
+<!-- ============ ESP32-C3 (FS6) ============ -->
+<!-- AMS1117-3.3 -->
+<rect x="1230" y="96" width="80" height="50" fill="#fff8f0" stroke="#770090" stroke-width="1.5" rx="4"/>
+<text x="1270" y="115" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">AMS1117</text>
+<text x="1270" y="127" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">-3.3 V</text>
+<line x1="1218" y1="121" x2="1230" y2="121" stroke="black" stroke-width="1.5"/>
+<polygon points="1208,121 1218,116 1218,126" fill="black"/>
+<text x="1206" y="116" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">5 V</text>
+<line x1="1310" y1="121" x2="1350" y2="121" stroke="black" stroke-width="1.5"/>
+<text x="1320" y="116" font-size="9" font-family="Helvetica,Arial,sans-serif" fill="#770090">3.3 V</text>
+<line x1="1350" y1="121" x2="1350" y2="100" stroke="black" stroke-width="1.5"/>
+<polygon points="1350,88 1344,100 1356,100" fill="#770090"/>
+<text x="1356" y="94" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#770090">VDD</text>
+<line x1="1338" y1="100" x2="1364" y2="100" stroke="black" stroke-width="2"/>
+<line x1="1338" y1="107" x2="1364" y2="107" stroke="black" stroke-width="2"/>
+<text x="1368" y="105" font-size="8.5" font-family="Helvetica,Arial,sans-serif">100nF</text>
+<line x1="1350" y1="107" x2="1350" y2="145" stroke="black" stroke-width="1.5"/>
+<line x1="1336" y1="145" x2="1364" y2="145" stroke="black" stroke-width="1.5"/>
+<line x1="1340" y1="151" x2="1360" y2="151" stroke="black" stroke-width="1.5"/>
+<line x1="1344" y1="157" x2="1356" y2="157" stroke="black" stroke-width="1.5"/>
+
+<!-- ESP32-C3 IC -->
+<rect x="1218" y="200" width="262" height="380" fill="#faf0ff" stroke="#770090" stroke-width="2" rx="6"/>
+<text x="1349" y="222" font-size="12" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold" fill="#770090">ESP32-C3</text>
+<text x="1349" y="238" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" fill="#770090">RISC-V 160 MHz — Wi-Fi 2.4 GHz</text>
+
+<!-- Left pins -->
+<line x1="1198" y1="260" x2="1218" y2="260" stroke="#770090" stroke-width="1.5"/>
+<text x="1214" y="256" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end" fill="#770090">VDD</text>
+<text x="1224" y="256" font-size="9" font-family="Helvetica,Arial,sans-serif">VDD 3.3V</text>
+
+<line x1="1198" y1="290" x2="1218" y2="290" stroke="black" stroke-width="1.5"/>
+<text x="1214" y="286" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">GND</text>
+<text x="1224" y="286" font-size="9" font-family="Helvetica,Arial,sans-serif">GND</text>
+
+<line x1="1198" y1="360" x2="1218" y2="360" stroke="#c05000" stroke-width="2"/>
+<circle cx="1198" cy="360" r="3.5" fill="#c05000"/>
+<text x="1214" y="355" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end" fill="#c05000">GPIO2</text>
+<text x="1224" y="355" font-size="9" font-family="Helvetica,Arial,sans-serif" fill="#c05000">ADC1_CH2 ← Température</text>
+
+<line x1="1198" y1="390" x2="1218" y2="390" stroke="#333" stroke-width="1.5" stroke-dasharray="4,2"/>
+<text x="1214" y="385" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">GPIO3</text>
+<text x="1224" y="385" font-size="9" font-family="Helvetica,Arial,sans-serif" fill="#555">ADC1_CH3 ← Luminosité</text>
+
+<line x1="1198" y1="430" x2="1218" y2="430" stroke="#333" stroke-width="1.5"/>
+<text x="1214" y="426" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">TX</text>
+<text x="1224" y="426" font-size="9" font-family="Helvetica,Arial,sans-serif">UART TX</text>
+
+<line x1="1198" y1="455" x2="1218" y2="455" stroke="#333" stroke-width="1.5"/>
+<text x="1214" y="451" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="end">RX</text>
+<text x="1224" y="451" font-size="9" font-family="Helvetica,Arial,sans-serif">UART RX</text>
+
+<!-- Wi-Fi annotation -->
+<text x="1349" y="520" font-size="9" fill="#770090" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">Wi-Fi 2.4 GHz</text>
+<text x="1349" y="534" font-size="8.5" fill="#770090" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Serveur HTTP</text>
+<line x1="1480" y1="310" x2="1480" y2="335" stroke="#770090" stroke-width="2"/>
+<line x1="1480" y1="310" x2="1470" y2="295" stroke="#770090" stroke-width="1.5"/>
+<line x1="1480" y1="310" x2="1490" y2="295" stroke="#770090" stroke-width="1.5"/>
+
+<!-- Note firmware -->
+<rect x="1205" y="595" width="278" height="70" fill="#fff0ff" stroke="#770090" stroke-width="1" stroke-dasharray="4,3" rx="3"/>
+<text x="1344" y="612" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold" fill="#770090">Note Firmware</text>
+<text x="1211" y="628" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#444">• AP Wi-Fi ou connexion réseau</text>
+<text x="1211" y="642" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#444">• Page Web : T (°C) + Luminosité (lux)</text>
+<text x="1211" y="656" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="#444">• ADC 12 bits — refresh &lt; 1 s</text>
+
+<!-- UART Connector -->
+<rect x="1205" y="685" width="160" height="48" fill="white" stroke="#333" stroke-width="1.5" rx="3"/>
+<text x="1285" y="699" font-size="9" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">J_UART — Debug</text>
+<text x="1211" y="714" font-size="8.5" font-family="Helvetica,Arial,sans-serif">1:TX  2:RX  3:GND  4:3V3</text>
+<text x="1211" y="726" font-size="8" font-family="Helvetica,Arial,sans-serif" fill="#555">(adaptateur USB-UART ext.)</text>
+
+
+<!-- ============ TITLE BLOCK ============ -->
+<rect x="1" y="888" width="1518" height="90" fill="none" stroke="#333" stroke-width="1"/>
+<line x1="400" y1="888" x2="400" y2="978" stroke="#333" stroke-width="1"/>
+<line x1="800" y1="888" x2="800" y2="978" stroke="#333" stroke-width="1"/>
+<line x1="1100" y1="888" x2="1100" y2="978" stroke="#333" stroke-width="1"/>
+<line x1="1300" y1="888" x2="1300" y2="978" stroke="#333" stroke-width="1"/>
+<text x="200" y="915" font-size="11" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">SCHÉMA 2 — CAPTEUR DE TEMPÉRATURE</text>
+<text x="200" y="932" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Source courant + Soustracteur + Filtre + ESP32-C3</text>
+<text x="200" y="965" font-size="9.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" fill="#555">Composants : 1N914, BC547×2, TL431, MCP6022×2, ESP32-C3</text>
+<text x="600" y="915" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" font-weight="bold">Projet — 1DA TP2</text>
+<text x="600" y="935" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Station de Mesure Multi-Capteurs</text>
+<text x="950" y="920" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Date : 2025</text>
+<text x="950" y="940" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Version : v2.0</text>
+<text x="1200" y="920" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">VCC = 3.3 V</text>
+<text x="1200" y="940" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">GND commun</text>
+<text x="1400" y="920" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Feuille 2/2</text>
+<text x="1400" y="940" font-size="10" font-family="Helvetica,Arial,sans-serif" text-anchor="middle">Échelle: N/A</text>
+
+</svg>
+</div>
+</div>
+
+<script>
+function show(n) {
+  document.querySelectorAll('.page').forEach((e,i) => e.classList.toggle('active', i===n));
+  document.querySelectorAll('.tab').forEach((e,i) => e.classList.toggle('active', i===n));
+}
+</script>
+</body>
+</html>
