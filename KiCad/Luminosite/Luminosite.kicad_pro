@@ -412,6 +412,14 @@
     [
       "224aed98-e352-413c-9045-253a32dabf3f",
       "Root"
+    ],
+    [
+      "a1ec5a25-f8a1-4803-94b4-701cfae1b8a6",
+      "Luminosité"
+    ],
+    [
+      "7b70d6a2-1061-452a-98d5-e1a8540e4782",
+      "Température"
     ]
   ],
   "text_variables": {}
