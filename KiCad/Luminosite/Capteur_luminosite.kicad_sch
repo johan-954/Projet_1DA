@@ -1427,7 +1427,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 33.02 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -1741,7 +1741,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 44.45 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -1821,7 +1821,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MCP6022:SOP8P65_300X640X120L60X24N"
+		(property "Footprint" "MCP2022:SOP8P65_300X640X120L60X24N"
 			(at 44.45 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -1919,7 +1919,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 68.58 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -2001,7 +2001,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 72.39 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -2083,7 +2083,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 100.33 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -2321,7 +2321,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 100.33 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -2401,7 +2401,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 44.45 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -2562,7 +2562,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 58.42 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -2644,7 +2644,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MCP6022:SOP8P65_300X640X120L60X24N"
+		(property "Footprint" "MCP2022:SOP8P65_300X640X120L60X24N"
 			(at 107.95 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -2742,7 +2742,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 76.2 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -2821,7 +2821,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MCP6022:SOP8P65_300X640X120L60X24N"
+		(property "Footprint" "MCP2022:SOP8P65_300X640X120L60X24N"
 			(at 86.36 53.34 0)
 			(hide yes)
 			(show_name no)

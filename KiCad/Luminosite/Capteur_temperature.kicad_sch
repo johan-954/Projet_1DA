@@ -277,6 +277,333 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "BC547:BC547C"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at -10.16 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "BC547C"
+				(at -10.16 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "BC547C:TRANS_BC547C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "BJT, TO-92, 45V, 100mA, NPN, 0.5W, 150°C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MF" "Diotec Semiconductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "CREATOR" "DIZAR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Package" "TO-92 Diotec"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/BC547C/Diotec/view-part/?ref=eda"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "PARTREV" "2022-11-28"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "VERIFIER" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/BC547C/Diotec/view-part/?ref=snap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "BC547C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=4299155&manufacturer=Diotec Semiconductor&part_name=BC547C&search_term=bc547"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "Diotec Semiconductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "BC547C_0_0"
+				(rectangle
+					(start -0.254 -2.54)
+					(end 0.508 2.54)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -1.524) (xy 2.54 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.54 -2.04) (xy 0.308 -1.424)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 0.508 1.524)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -1353,80 +1680,86 @@
 		)
 	)
 	(junction
-		(at 60.96 66.04)
+		(at 92.71 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "044793e7-4d25-4036-a7b4-9760de94f13b")
 	)
 	(junction
-		(at 132.08 57.15)
+		(at 163.83 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "116aa015-63f8-4640-95e0-99e9e5cf3a11")
 	)
 	(junction
-		(at 120.65 57.15)
+		(at 152.4 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "19df6ccd-5cf2-45eb-b02d-d510890eda0c")
 	)
 	(junction
-		(at 92.71 91.44)
+		(at 124.46 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3f3e7f32-962c-4c28-b0bd-3453524b815a")
 	)
 	(junction
-		(at 152.4 59.69)
+		(at 184.15 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60adcf22-b508-4263-841f-b45d9b723a39")
 	)
 	(junction
-		(at 62.23 49.53)
+		(at 93.98 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "70bb402d-cc0c-4484-a6f6-8d9893b734d1")
 	)
 	(junction
-		(at 62.23 72.39)
+		(at 93.98 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76e4a76d-a1be-4e48-9a6c-58efa57ac094")
 	)
 	(junction
-		(at 52.07 59.69)
+		(at 83.82 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a45a3f5-adcc-4067-8a70-884b55fb8987")
 	)
 	(junction
-		(at 101.6 54.61)
+		(at 133.35 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9e9622cf-4c91-4acc-8857-425573191152")
 	)
 	(junction
-		(at 102.87 59.69)
+		(at 134.62 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b150a7f3-09b2-4db9-a6be-b19173b04f2c")
 	)
 	(junction
-		(at 110.49 91.44)
+		(at 142.24 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dc279455-f133-4d43-a767-782b150e4121")
 	)
 	(junction
-		(at 72.39 59.69)
+		(at 205.74 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7dfe8ed-3d11-4284-ae20-770043beca5c")
+	)
+	(junction
+		(at 104.14 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f82c783d-e7d2-48e1-97dd-6792d8d41219")
 	)
 	(wire
 		(pts
-			(xy 62.23 72.39) (xy 72.39 72.39)
+			(xy 93.98 95.25) (xy 104.14 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1436,7 +1769,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 97.79) (xy 92.71 99.06)
+			(xy 124.46 120.65) (xy 124.46 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1446,7 +1779,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 66.04) (xy 64.77 66.04)
+			(xy 92.71 88.9) (xy 99.06 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1456,7 +1789,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 49.53) (xy 72.39 50.8)
+			(xy 104.14 72.39) (xy 104.14 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1466,7 +1799,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 90.17) (xy 92.71 91.44)
+			(xy 124.46 113.03) (xy 124.46 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1476,7 +1809,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 52.07) (xy 52.07 49.53)
+			(xy 83.82 74.93) (xy 83.82 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1486,7 +1819,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 59.69) (xy 96.52 59.69)
+			(xy 104.14 82.55) (xy 128.27 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1496,7 +1829,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 57.15) (xy 135.89 57.15)
+			(xy 163.83 80.01) (xy 167.64 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1506,7 +1839,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 44.45) (xy 101.6 44.45)
+			(xy 140.97 67.31) (xy 133.35 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1516,7 +1849,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 62.23) (xy 135.89 67.31)
+			(xy 167.64 85.09) (xy 167.64 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1526,7 +1859,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 91.44) (xy 92.71 91.44)
+			(xy 120.65 114.3) (xy 124.46 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1536,7 +1869,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 54.61) (xy 92.71 54.61)
+			(xy 123.19 77.47) (xy 124.46 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1546,7 +1879,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 71.12) (xy 52.07 72.39)
+			(xy 83.82 93.98) (xy 83.82 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1556,7 +1889,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 59.69) (xy 152.4 59.69)
+			(xy 196.85 82.55) (xy 184.15 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1566,7 +1899,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 59.69) (xy 104.14 59.69)
+			(xy 134.62 82.55) (xy 135.89 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1576,7 +1909,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 67.31) (xy 152.4 59.69)
+			(xy 184.15 90.17) (xy 184.15 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1586,7 +1919,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 95.25) (xy 88.9 91.44)
+			(xy 120.65 118.11) (xy 120.65 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1596,7 +1929,17 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 91.44) (xy 92.71 92.71)
+			(xy 205.74 82.55) (xy 201.93 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46d6fc05-21aa-4f48-9f01-b92a61d58d8d")
+	)
+	(wire
+		(pts
+			(xy 124.46 114.3) (xy 124.46 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1606,7 +1949,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 97.79) (xy 110.49 99.06)
+			(xy 142.24 120.65) (xy 142.24 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1616,7 +1959,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 49.53) (xy 72.39 49.53)
+			(xy 93.98 72.39) (xy 104.14 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1626,7 +1969,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 59.69) (xy 72.39 60.96)
+			(xy 104.14 82.55) (xy 104.14 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1636,7 +1979,17 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 44.45) (xy 120.65 57.15)
+			(xy 205.74 85.09) (xy 205.74 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54c81a8b-95cd-4ded-a572-4b41006e0f7d")
+	)
+	(wire
+		(pts
+			(xy 152.4 67.31) (xy 152.4 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1646,7 +1999,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 19.05) (xy 156.21 19.05)
+			(xy 189.23 41.91) (xy 187.96 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1656,7 +2009,17 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 91.44) (xy 99.06 91.44)
+			(xy 88.9 88.9) (xy 92.71 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "598115f6-b9e3-47a0-892f-ef940916e02c")
+	)
+	(wire
+		(pts
+			(xy 124.46 114.3) (xy 130.81 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1666,7 +2029,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 67.31) (xy 152.4 67.31)
+			(xy 167.64 90.17) (xy 184.15 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1676,7 +2039,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 54.61) (xy 104.14 54.61)
+			(xy 133.35 77.47) (xy 135.89 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1686,7 +2049,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 71.12) (xy 132.08 72.39)
+			(xy 163.83 93.98) (xy 163.83 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1696,7 +2059,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 91.44) (xy 110.49 91.44)
+			(xy 135.89 114.3) (xy 142.24 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1706,7 +2069,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 44.45) (xy 101.6 54.61)
+			(xy 133.35 67.31) (xy 133.35 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1716,7 +2079,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 54.61) (xy 101.6 54.61)
+			(xy 129.54 77.47) (xy 133.35 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1726,7 +2089,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 57.15) (xy 132.08 57.15)
+			(xy 162.56 80.01) (xy 163.83 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1736,7 +2099,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 83.82) (xy 92.71 85.09)
+			(xy 124.46 106.68) (xy 124.46 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1746,7 +2109,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 66.04) (xy 102.87 67.31)
+			(xy 134.62 88.9) (xy 134.62 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1756,7 +2119,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 72.39) (xy 62.23 73.66)
+			(xy 93.98 95.25) (xy 93.98 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1766,7 +2129,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 57.15) (xy 119.38 57.15)
+			(xy 152.4 80.01) (xy 151.13 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1776,7 +2139,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 91.44) (xy 116.84 91.44)
+			(xy 142.24 114.3) (xy 148.59 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1786,7 +2149,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 59.69) (xy 102.87 59.69)
+			(xy 133.35 82.55) (xy 134.62 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1796,7 +2159,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 72.39) (xy 62.23 72.39)
+			(xy 83.82 95.25) (xy 93.98 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1806,7 +2169,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 49.53) (xy 62.23 49.53)
+			(xy 83.82 72.39) (xy 93.98 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1816,7 +2179,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 88.9) (xy 110.49 91.44)
+			(xy 142.24 111.76) (xy 142.24 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1826,7 +2189,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 66.04) (xy 60.96 59.69)
+			(xy 92.71 88.9) (xy 92.71 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1836,7 +2199,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 57.15) (xy 132.08 66.04)
+			(xy 163.83 80.01) (xy 163.83 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1846,7 +2209,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 44.45) (xy 120.65 44.45)
+			(xy 146.05 67.31) (xy 152.4 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1856,7 +2219,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 97.79) (xy 116.84 99.06)
+			(xy 148.59 120.65) (xy 148.59 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1866,7 +2229,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 92.71) (xy 110.49 91.44)
+			(xy 142.24 115.57) (xy 142.24 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1876,7 +2239,17 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 57.15) (xy 52.07 59.69)
+			(xy 205.74 82.55) (xy 210.82 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0b77df3-d6da-4c3c-a6cc-a29353812bfe")
+	)
+	(wire
+		(pts
+			(xy 83.82 80.01) (xy 83.82 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1886,7 +2259,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 71.12) (xy 72.39 72.39)
+			(xy 104.14 93.98) (xy 104.14 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1896,7 +2269,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 59.69) (xy 52.07 60.96)
+			(xy 83.82 82.55) (xy 83.82 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1906,7 +2279,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 95.25) (xy 88.9 95.25)
+			(xy 121.92 118.11) (xy 120.65 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1916,7 +2289,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 59.69) (xy 52.07 59.69)
+			(xy 92.71 82.55) (xy 83.82 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1926,7 +2299,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 57.15) (xy 125.73 57.15)
+			(xy 152.4 80.01) (xy 157.48 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1936,7 +2309,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 48.26) (xy 62.23 49.53)
+			(xy 93.98 71.12) (xy 93.98 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1946,17 +2319,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 66.04) (xy 60.96 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1bca168-02f0-4438-a16f-b17df33ba553")
-	)
-	(wire
-		(pts
-			(xy 152.4 59.69) (xy 151.13 59.69)
+			(xy 184.15 82.55) (xy 182.88 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1966,7 +2329,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 19.05) (xy 156.21 20.32)
+			(xy 187.96 41.91) (xy 187.96 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1976,7 +2339,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 59.69) (xy 102.87 60.96)
+			(xy 134.62 82.55) (xy 134.62 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1986,7 +2349,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 35.56) (xy 156.21 36.83)
+			(xy 187.96 58.42) (xy 187.96 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1996,7 +2359,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 58.42) (xy 72.39 59.69)
+			(xy 104.14 81.28) (xy 104.14 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2006,7 +2369,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 91.44) (xy 116.84 92.71)
+			(xy 148.59 114.3) (xy 148.59 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2016,7 +2379,7 @@
 	)
 	(global_label "VCOM"
 		(shape input)
-		(at 110.49 88.9 90)
+		(at 142.24 111.76 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2026,7 +2389,31 @@
 		)
 		(uuid "080d75a3-d2a5-4279-9e6c-8e4e2e86ee1a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.49 80.7743 90)
+			(at 142.24 103.6343 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Température_OUT"
+		(shape input)
+		(at 210.82 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1265d3b5-5eb2-415e-898d-eb1f416d7081")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 229.419 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2040,7 +2427,7 @@
 	)
 	(global_label "+3.3V"
 		(shape input)
-		(at 157.48 19.05 0)
+		(at 189.23 41.91 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2050,7 +2437,7 @@
 		)
 		(uuid "525d11da-57e7-4677-948f-d4012ac8d831")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.15 19.05 0)
+			(at 197.9 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2064,7 +2451,7 @@
 	)
 	(global_label "VCOM"
 		(shape input)
-		(at 91.44 54.61 180)
+		(at 123.19 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2074,7 +2461,7 @@
 		)
 		(uuid "74480e3c-2692-4183-b248-775006f11107")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.3143 54.61 0)
+			(at 115.0643 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2088,7 +2475,7 @@
 	)
 	(global_label "+3.3V"
 		(shape input)
-		(at 92.71 83.82 90)
+		(at 124.46 106.68 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2098,7 +2485,7 @@
 		)
 		(uuid "d0986ea1-f79e-4194-9c17-4c18fe74b135")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 75.15 90)
+			(at 124.46 98.01 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2112,7 +2499,7 @@
 	)
 	(global_label "+3.3V"
 		(shape input)
-		(at 62.23 48.26 90)
+		(at 93.98 71.12 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2122,7 +2509,7 @@
 		)
 		(uuid "db4015cf-be98-4a9f-aad1-23efa18d1987")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.23 39.59 90)
+			(at 93.98 62.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2136,7 +2523,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 92.71 87.63 0)
+		(at 124.46 110.49 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2147,7 +2534,7 @@
 		(dnp no)
 		(uuid "002f19dd-06c6-4e00-9116-0bdac0d84cb0")
 		(property "Reference" "R13"
-			(at 90.17 86.3599 0)
+			(at 121.92 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2158,7 +2545,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 90.17 88.8999 0)
+			(at 121.92 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2168,8 +2555,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 92.71 87.63 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 124.46 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2180,7 +2567,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 87.63 0)
+			(at 124.46 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2191,7 +2578,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 92.71 87.63 0)
+			(at 124.46 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2214,11 +2601,17 @@
 					(unit 1)
 				)
 			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R13")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 116.84 95.25 0)
+		(at 148.59 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2228,7 +2621,7 @@
 		(dnp no)
 		(uuid "0fe6cdc9-4b8c-41d9-804a-817b63aa1efe")
 		(property "Reference" "C5"
-			(at 119.888 95.758 0)
+			(at 151.638 118.618 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2239,7 +2632,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 118.872 98.806 0)
+			(at 150.622 121.666 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2249,8 +2642,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 116.84 95.25 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 148.59 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2261,7 +2654,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 95.25 0)
+			(at 148.59 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2272,7 +2665,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 116.84 95.25 0)
+			(at 148.59 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2295,11 +2688,17 @@
 					(unit 1)
 				)
 			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "C5")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 132.08 72.39 0)
+		(at 163.83 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2310,7 +2709,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ff5fcec-9af3-4731-9de0-053cb14ba68b")
 		(property "Reference" "#PWR09"
-			(at 132.08 78.74 0)
+			(at 163.83 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2321,7 +2720,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 77.47 0)
+			(at 163.83 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2331,7 +2730,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 72.39 0)
+			(at 163.83 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2342,7 +2741,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 72.39 0)
+			(at 163.83 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2353,7 +2752,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 72.39 0)
+			(at 163.83 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2373,11 +2772,117 @@
 					(unit 1)
 				)
 			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6022")
+		(at 190.5 50.8 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1bae86b4-28d1-4f54-81e0-4e71fc3253ac")
+		(property "Reference" "U3"
+			(at 189.23 49.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP6022"
+			(at 189.23 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MCP2022:SOP8P65_300X640X120L60X24N"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/devicedoc/20001685e.pdf"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual Operational Amplifiers, Rail-to-Rail Input/Output, DIP-8/SOIC-8/TSSOP-8"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "ae6cdb26-034d-40e6-815d-2ea658209fe5")
+		)
+		(pin "2"
+			(uuid "ed662f9f-91d9-444d-ae30-b4e3efa39e25")
+		)
+		(pin "8"
+			(uuid "74fabd14-0c69-4054-8c5c-b25de721899f")
+		)
+		(pin "1"
+			(uuid "8df24bae-693c-4e6c-9418-404780d236dc")
+		)
+		(pin "4"
+			(uuid "9b9aff92-131f-495d-92e9-523cd2282583")
+		)
+		(pin "3"
+			(uuid "160d8734-9842-41b4-bfcf-1e9f13bd09be")
+		)
+		(pin "5"
+			(uuid "b42508c9-812d-4b07-b1b3-9218b9bfc2de")
+		)
+		(pin "7"
+			(uuid "490c1583-3b70-443a-8b54-b9e0d466a1ba")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "U3")
+					(unit 3)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Diode:1N914")
-		(at 72.39 54.61 90)
+		(at 104.14 77.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2388,7 +2893,7 @@
 		(fields_autoplaced yes)
 		(uuid "1bafe4c0-01a8-414e-9c34-73aa9a641dc6")
 		(property "Reference" "D1"
-			(at 74.93 53.3399 90)
+			(at 106.68 76.1999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2399,7 +2904,7 @@
 			)
 		)
 		(property "Value" "1N914"
-			(at 74.93 55.8799 90)
+			(at 106.68 78.7399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2410,7 +2915,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 76.835 54.61 0)
+			(at 108.585 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2421,7 +2926,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/85622/1n914.pdf"
-			(at 72.39 54.61 0)
+			(at 104.14 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2432,7 +2937,7 @@
 			)
 		)
 		(property "Description" "100V 0.3A Small Signal Fast Switching Diode, DO-35"
-			(at 72.39 54.61 0)
+			(at 104.14 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2443,7 +2948,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 72.39 54.61 0)
+			(at 104.14 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2454,7 +2959,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 72.39 54.61 0)
+			(at 104.14 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2477,11 +2982,17 @@
 					(unit 1)
 				)
 			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "D1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 156.21 36.83 0)
+		(at 187.96 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2492,7 +3003,7 @@
 		(fields_autoplaced yes)
 		(uuid "22c3bc7a-33a4-42f0-845b-8f3c0a9a7a54")
 		(property "Reference" "#PWR010"
-			(at 156.21 43.18 0)
+			(at 187.96 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2503,7 +3014,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.21 41.91 0)
+			(at 187.96 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2513,7 +3024,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.21 36.83 0)
+			(at 187.96 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2524,7 +3035,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 36.83 0)
+			(at 187.96 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2535,7 +3046,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 36.83 0)
+			(at 187.96 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2555,11 +3066,17 @@
 					(unit 1)
 				)
 			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 110.49 99.06 0)
+		(at 142.24 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2570,7 +3087,7 @@
 		(fields_autoplaced yes)
 		(uuid "239db3aa-af8f-4b7f-ad5f-f13b09152a4a")
 		(property "Reference" "#PWR013"
-			(at 110.49 105.41 0)
+			(at 142.24 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2581,7 +3098,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 104.14 0)
+			(at 142.24 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2591,7 +3108,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 99.06 0)
+			(at 142.24 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2602,7 +3119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 99.06 0)
+			(at 142.24 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2613,7 +3130,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 99.06 0)
+			(at 142.24 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2633,11 +3150,17 @@
 					(unit 1)
 				)
 			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 52.07 54.61 0)
+		(at 83.82 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2648,7 +3171,7 @@
 		(fields_autoplaced yes)
 		(uuid "23cdd73a-69fc-40cf-84f4-5d8045e2568c")
 		(property "Reference" "R7"
-			(at 54.61 53.3399 0)
+			(at 86.36 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2659,7 +3182,7 @@
 			)
 		)
 		(property "Value" "33k"
-			(at 54.61 55.8799 0)
+			(at 86.36 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2669,8 +3192,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 52.07 54.61 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 83.82 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2681,7 +3204,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 54.61 0)
+			(at 83.82 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2692,7 +3215,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 52.07 54.61 0)
+			(at 83.82 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2715,11 +3238,17 @@
 					(unit 1)
 				)
 			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R7")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 101.6 91.44 90)
+		(at 205.74 87.63 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2727,10 +3256,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38cd1c23-9612-4221-8ca5-169c7e8e42f7")
-		(property "Reference" "R14"
-			(at 101.6 86.36 90)
+		(uuid "2674d392-1272-4e2c-b73c-a9c41aa52132")
+		(property "Reference" "R18"
+			(at 208.026 87.884 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2739,8 +3267,8 @@
 				)
 			)
 		)
-		(property "Value" "5.1k"
-			(at 101.6 88.9 90)
+		(property "Value" "10k"
+			(at 203.962 87.884 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2749,8 +3277,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 101.6 91.44 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 205.74 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2761,7 +3289,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 91.44 0)
+			(at 205.74 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2772,7 +3300,352 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 101.6 91.44 0)
+			(at 205.74 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6ef64f30-dda2-4f10-b377-6c3b6d249573")
+		)
+		(pin "1"
+			(uuid "bdba0a56-35e3-4758-8457-6d1c4f35e263")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 142.24 118.11 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "27120d8b-b3a8-494b-ac03-6cc2d192f8a8")
+		(property "Reference" "R17"
+			(at 137.16 117.094 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 137.16 119.634 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "87ea5e3c-a0df-4537-8c4d-f8f37f2419a7")
+		)
+		(pin "1"
+			(uuid "4a17df7a-fc33-4995-81ae-bde2b0304902")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 143.51 67.31 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d0b5c12-d34d-4bb2-bd81-a67a1b2fd9d5")
+		(property "Reference" "R15"
+			(at 143.51 62.23 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 143.51 64.77 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 143.51 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 143.51 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d44532db-b18f-4e3f-ad13-030bb33bed3b")
+		)
+		(pin "1"
+			(uuid "f5324dcd-0ac9-4b9d-bdd5-345fc0480fd2")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 160.02 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2dfa7f56-7a22-421e-b465-ce0eb5d2da58")
+		(property "Reference" "R16"
+			(at 160.02 74.93 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 160.02 77.47 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 160.02 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 160.02 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "eb6edae8-307d-4f82-bb0d-a7072be42a7c")
+		)
+		(pin "1"
+			(uuid "65acefaf-c7f8-4e82-bc07-03e79910b7a7")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 133.35 114.3 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38cd1c23-9612-4221-8ca5-169c7e8e42f7")
+		(property "Reference" "R14"
+			(at 133.35 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 133.35 111.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 133.35 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 133.35 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2795,11 +3668,17 @@
 					(unit 1)
 				)
 			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R14")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 95.25 54.61 90)
+		(at 127 77.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2810,7 +3689,7 @@
 		(fields_autoplaced yes)
 		(uuid "41896ba9-ec03-4843-aa8d-d5301685d7b3")
 		(property "Reference" "R10"
-			(at 95.25 49.53 90)
+			(at 127 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2820,7 +3699,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 95.25 52.07 90)
+			(at 127 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2829,8 +3708,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 95.25 54.61 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 127 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2841,7 +3720,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 54.61 0)
+			(at 127 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2852,7 +3731,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 95.25 54.61 0)
+			(at 127 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2875,11 +3754,17 @@
 					(unit 1)
 				)
 			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R10")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6022")
-		(at 111.76 57.15 0)
+		(at 143.51 80.01 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2888,1241 +3773,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "43556945-648b-44fd-8cdc-305d79b686de")
-		(property "Reference" "U2"
-			(at 111.76 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP6022"
-			(at 111.76 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MCP6022:SOP8P65_300X640X120L60X24N"
-			(at 111.76 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/devicedoc/20001685e.pdf"
-			(at 111.76 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual Operational Amplifiers, Rail-to-Rail Input/Output, DIP-8/SOIC-8/TSSOP-8"
-			(at 111.76 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "7"
-			(uuid "dba2a729-2663-4b7f-9d73-daf2e21ccf07")
-		)
-		(pin "5"
-			(uuid "ea1a73d4-4f22-41f8-978f-ebd88dd36831")
-		)
-		(pin "4"
-			(uuid "a47118ae-77f4-4896-9a7e-9b11c09d3a98")
-		)
-		(pin "8"
-			(uuid "3750ca5e-52bd-40cb-802e-333d6602e5a5")
-		)
-		(pin "3"
-			(uuid "1ab8e65e-d2cc-4c02-bc37-6827260ad156")
-		)
-		(pin "6"
-			(uuid "39a21916-7b16-4601-a753-d9222a8c159b")
-		)
-		(pin "2"
-			(uuid "224b0b9a-6d9d-475c-9f22-f12bef363108")
-		)
-		(pin "1"
-			(uuid "c40d8a70-c647-44ce-900c-68fd40a57a3c")
-		)
-		(instances
-<<<<<<< HEAD
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 170.18 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "530addaa-bdef-4da2-897b-0e297d4c3539")
-		(property "Reference" "J2"
-			(at 172.72 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x03"
-			(at 172.72 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 170.18 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 170.18 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "227e8b84-93d2-462c-9e07-62f845c7d73c")
-		)
-		(pin "2"
-			(uuid "db62a309-c12a-4dd0-a4e1-0286e8874948")
-		)
-		(pin "1"
-			(uuid "6d367db0-d7b0-491c-a9cf-c2dd0fdcdd09")
-		)
-		(instances
-=======
->>>>>>> 6b6e20110b3a5c7ead4ecb1c8045de1c04b1c20f
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 62.23 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5462e59a-355e-41fa-b871-5f592ac9dde3")
-		(property "Reference" "#PWR07"
-			(at 62.23 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 62.23 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 62.23 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c65fd74d-d8c5-488c-a5d9-8a9fb2b3cd8f")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 132.08 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7209cef1-d4b4-4b66-80f3-ec6452e98b8a")
-		(property "Reference" "C4"
-			(at 135.128 69.088 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 134.112 72.136 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 132.08 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 132.08 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2a9eb5be-5a7f-4bc9-993d-c6128fadf74c")
-		)
-		(pin "1"
-			(uuid "f492c63a-5ee8-4ddc-87cf-becd7aad240e")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 92.71 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9095dc7a-5f5a-4048-bff7-ed662d9a8aaa")
-		(property "Reference" "#PWR012"
-			(at 92.71 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 92.71 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "eb5c6f74-0d8c-417b-b104-34926e766bd3")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 111.76 44.45 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92f80a0e-b78a-4323-a0c9-467d3ee39cd0")
-		(property "Reference" "R11"
-			(at 111.76 39.37 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 111.76 41.91 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 111.76 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 111.76 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6c2b03c8-36ee-40de-b3f8-7e2ced69de28")
-		)
-		(pin "1"
-			(uuid "dfeb5be8-10b8-4490-bef4-8a1e96739215")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC547")
-		(at 69.85 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d93a0a9-aee1-4948-9159-19e5cfec364a")
-		(property "Reference" "Q2"
-			(at 74.93 64.7699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC547"
-			(at 74.93 67.3099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 74.93 67.945 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 69.85 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 69.85 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6e982739-d82e-48c2-86e5-c60eeb202e20")
-		)
-		(pin "1"
-			(uuid "bd773278-5116-4831-9938-e77057b880d3")
-		)
-		(pin "3"
-			(uuid "574ab787-1d6e-4568-a062-9fe0a37f3aec")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 128.27 57.15 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9f3be3ae-dbf3-4197-8bb6-dc1a8bda2015")
-		(property "Reference" "R12"
-			(at 128.27 52.07 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 128.27 54.61 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 128.27 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 128.27 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f80efa6b-a48b-4d50-ab5c-58e5a4deca25")
-		)
-		(pin "1"
-			(uuid "ec4f3c55-4384-45b3-8c7c-73f209a55f3c")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:MCP6022")
-		(at 143.51 59.69 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a026b96f-c355-437a-839b-4dac01e0ae94")
-		(property "Reference" "U2"
-			(at 143.51 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP6022"
-			(at 143.51 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MCP6022:SOP8P65_300X640X120L60X24N"
-			(at 143.51 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/devicedoc/20001685e.pdf"
-			(at 143.51 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual Operational Amplifiers, Rail-to-Rail Input/Output, DIP-8/SOIC-8/TSSOP-8"
-			(at 143.51 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "7"
-<<<<<<< HEAD
-			(uuid "b4d6c539-fced-48e1-9d24-23f2119ceedc")
-		)
-		(pin "5"
-			(uuid "33180d8b-e701-43d6-a23d-667610bbf749")
-=======
-			(uuid "dba2a729-2663-4b7f-9d73-daf2e21ccf08")
-		)
-		(pin "5"
-			(uuid "ea1a73d4-4f22-41f8-978f-ebd88dd36832")
->>>>>>> 6b6e20110b3a5c7ead4ecb1c8045de1c04b1c20f
-		)
-		(pin "4"
-			(uuid "a47118ae-77f4-4896-9a7e-9b11c09d3a99")
-		)
-		(pin "8"
-			(uuid "3750ca5e-52bd-40cb-802e-333d6602e5a6")
-		)
-		(pin "3"
-			(uuid "8241de18-a7c3-44d5-a616-a6f6a323921a")
-		)
-		(pin "6"
-<<<<<<< HEAD
-			(uuid "2b2e9b4b-6ff1-4d5a-86d0-c769d1927e6d")
-=======
-			(uuid "39a21916-7b16-4601-a753-d9222a8c159c")
->>>>>>> 6b6e20110b3a5c7ead4ecb1c8045de1c04b1c20f
-		)
-		(pin "2"
-			(uuid "8a500501-969a-422c-8f87-529ddc6767f0")
-		)
-		(pin "1"
-			(uuid "c0a2dd92-b755-4fae-8f40-b47da86ad2a5")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "U2")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 102.87 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ada80459-b6d6-4e42-9c56-461fe74277ba")
-		(property "Reference" "R9"
-			(at 100.076 66.802 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 103.632 66.802 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 102.87 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 102.87 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "cb043c03-5012-465f-b8ea-bbbd3dfb4661")
-		)
-		(pin "1"
-			(uuid "17d90e18-ade1-4ed9-9d00-de509a98dc95")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 99.06 59.69 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bad59df5-2fa1-4f2c-aafb-9cdea6c45c10")
-		(property "Reference" "R8"
-			(at 99.568 57.15 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 99.06 61.468 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 99.06 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 99.06 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3000f601-645d-43d0-adfe-dd4e6d90d203")
-		)
-		(pin "1"
-			(uuid "574ab1c0-c503-4336-a3c4-d4a8bab1e5d7")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 110.49 95.25 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bbfa5ae3-00a9-40dd-bec0-7d44c88025b9")
-		(property "Reference" "R15"
-			(at 107.95 93.9799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 107.95 96.5199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 110.49 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 110.49 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1d799461-226c-4bc6-ba88-9b50d4ffb97a")
-		)
-		(pin "1"
-			(uuid "97b81576-5e13-4e84-9b7b-68ef59020d39")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:MCP6022")
-		(at 158.75 27.94 0)
-		(unit 3)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c6cff53a-6497-495f-a267-35641957e0ae")
-		(property "Reference" "U2"
-			(at 157.48 26.6699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP6022"
-			(at 157.48 29.2099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MCP6022:SOP8P65_300X640X120L60X24N"
-			(at 158.75 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/devicedoc/20001685e.pdf"
-			(at 158.75 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual Operational Amplifiers, Rail-to-Rail Input/Output, DIP-8/SOIC-8/TSSOP-8"
-			(at 158.75 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "7"
-			(uuid "dba2a729-2663-4b7f-9d73-daf2e21ccf09")
-		)
-		(pin "5"
-			(uuid "ea1a73d4-4f22-41f8-978f-ebd88dd36833")
-		)
-		(pin "4"
-<<<<<<< HEAD
-			(uuid "331b25f2-1ed9-4212-8bc6-2bb57e97705b")
-		)
-		(pin "8"
-			(uuid "d160f945-4810-455b-80e8-4db183dbc735")
-=======
-			(uuid "a47118ae-77f4-4896-9a7e-9b11c09d3a9a")
-		)
-		(pin "8"
-			(uuid "3750ca5e-52bd-40cb-802e-333d6602e5a7")
->>>>>>> 6b6e20110b3a5c7ead4ecb1c8045de1c04b1c20f
-		)
-		(pin "3"
-			(uuid "8241de18-a7c3-44d5-a616-a6f6a323921b")
-		)
-		(pin "6"
-			(uuid "39a21916-7b16-4601-a753-d9222a8c159d")
-		)
-		(pin "2"
-			(uuid "8a500501-969a-422c-8f87-529ddc6767f1")
-		)
-		(pin "1"
-			(uuid "c0a2dd92-b755-4fae-8f40-b47da86ad2a6")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "U2")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-<<<<<<< HEAD
-		(lib_id "power:GND")
-		(at 163.83 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db27cc94-565d-46cd-9afe-7bacb7df6d70")
-		(property "Reference" "#PWR011"
-			(at 163.83 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 163.83 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4e560877-7047-4a94-8600-855ebd7f6b4d")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-=======
->>>>>>> 6b6e20110b3a5c7ead4ecb1c8045de1c04b1c20f
-		(lib_id "Reference_Voltage:TL431D")
-		(at 92.71 95.25 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "efb79df6-0503-44c9-a90b-62ea4c91f159")
+		(uuid "43e28807-a015-4441-8cf2-7947688018af")
 		(property "Reference" "U3"
-			(at 95.25 93.9799 90)
+			(at 143.51 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "TL431D"
-			(at 95.25 96.5199 90)
+		(property "Value" "MCP6022"
+			(at 143.51 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 99.06 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl431.pdf"
-			(at 103.378 94.996 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" "Shunt Regulator, SO-8"
-			(at 101.092 95.504 0)
+		(property "Footprint" "MCP2022:SOP8P65_300X640X120L60X24N"
+			(at 143.51 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4132,23 +3805,51 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "619fb603-a596-4c62-b049-552a83850bf5")
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/devicedoc/20001685e.pdf"
+			(at 143.51 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "3"
-			(uuid "182460b4-39ae-44f8-aada-377b80e3280a")
+		(property "Description" "Dual Operational Amplifiers, Rail-to-Rail Input/Output, DIP-8/SOIC-8/TSSOP-8"
+			(at 143.51 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "6"
-			(uuid "9a35cccb-3531-48ba-80bc-2392550c7b30")
-		)
-		(pin "8"
-			(uuid "709c6dc8-4cdf-4d65-ba31-2393fe8f4041")
+			(uuid "ae6cdb26-034d-40e6-815d-2ea658209fe6")
 		)
 		(pin "2"
-			(uuid "4aa96ef3-98ec-448f-9a49-06833522ced4")
+			(uuid "ed662f9f-91d9-444d-ae30-b4e3efa39e26")
+		)
+		(pin "8"
+			(uuid "74fabd14-0c69-4054-8c5c-b25de72189a0")
+		)
+		(pin "1"
+			(uuid "8df24bae-693c-4e6c-9418-404780d236dd")
+		)
+		(pin "4"
+			(uuid "9b9aff92-131f-495d-92e9-523cd2282584")
+		)
+		(pin "3"
+			(uuid "160d8734-9842-41b4-bfcf-1e9f13bd09bf")
+		)
+		(pin "5"
+			(uuid "b42508c9-812d-4b07-b1b3-9218b9bfc2df")
 		)
 		(pin "7"
-			(uuid "f9195632-0760-4cf3-b8ad-69d9f96d2161")
+			(uuid "490c1583-3b70-443a-8b54-b9e0d466a1bb")
 		)
 		(instances
 			(project "Luminosite"
@@ -4161,7 +3862,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 99.06 0)
+		(at 93.98 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4170,9 +3871,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f18d83d0-5cd8-45fd-8647-d9c66ca3ce85")
-		(property "Reference" "#PWR014"
-			(at 116.84 105.41 0)
+		(uuid "45813615-76c1-4b3a-bf93-f53b9761bdfc")
+		(property "Reference" "#PWR100"
+			(at 93.98 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4183,7 +3884,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 116.84 104.14 0)
+			(at 93.98 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4193,7 +3894,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 99.06 0)
+			(at 93.98 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4204,7 +3905,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 99.06 0)
+			(at 93.98 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4215,7 +3916,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 99.06 0)
+			(at 93.98 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4226,7 +3927,432 @@
 			)
 		)
 		(pin "1"
-			(uuid "dc9f95ce-2c87-431d-9dcf-58a844d1e9c3")
+			(uuid "eb40d482-75a3-4457-819c-d3d9b66166f3")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "#PWR100")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 199.39 82.55 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "46f323a9-e5e9-4c64-813e-619daee65ec6")
+		(property "Reference" "R19"
+			(at 199.644 80.264 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 199.644 84.328 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 199.39 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 199.39 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c63ccfef-fc60-47ca-9141-a373224fed20")
+		)
+		(pin "1"
+			(uuid "8db60d36-9b9e-4e67-8c1b-5d1194e6862d")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 130.81 82.55 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4a2993f6-8aca-453c-a079-fc65673dd8bf")
+		(property "Reference" "R11"
+			(at 130.81 84.582 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 130.81 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 130.81 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 130.81 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "30c8fd04-7c88-4401-901f-1f0f1336275b")
+		)
+		(pin "1"
+			(uuid "7874bd7a-702c-438b-adb6-4549cf2c609f")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 163.83 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5c0133d7-6976-4a00-ba47-580288306098")
+		(property "Reference" "C6"
+			(at 166.878 91.948 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 165.862 94.996 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 163.83 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 163.83 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dd2c50f2-935b-4e91-93e4-22167dcf7897")
+		)
+		(pin "1"
+			(uuid "f7d432c4-432f-4af0-aea3-8ae3bfe2952f")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 134.62 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81c3540b-de69-428a-a271-33ffc5c45d76")
+		(property "Reference" "#PWR012"
+			(at 134.62 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 134.62 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a61d2f42-fc69-4d45-8e16-54f0cf73bc8f")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 124.46 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8951c88c-6111-4792-bc08-db2a128577ef")
+		(property "Reference" "#PWR014"
+			(at 124.46 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "72870d0f-63ba-4429-aed9-92efd7eefe28")
 		)
 		(instances
 			(project "Luminosite"
@@ -4238,96 +4364,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC547")
-		(at 54.61 66.04 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f317d3e4-6afe-494a-9d5b-dbd285759c57")
-		(property "Reference" "Q1"
-			(at 49.53 64.7699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC547"
-			(at 49.53 67.3099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 49.53 67.945 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 54.61 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 54.61 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a705feea-5a6b-4576-b9bc-660b1c30ce56")
-		)
-		(pin "1"
-			(uuid "29b9e11e-9af5-449e-99d9-611483488995")
-		)
-		(pin "3"
-			(uuid "17a92ab4-b57a-4f16-902f-3977d1bb9c38")
-		)
-		(instances
-			(project "Luminosite"
-				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 102.87 67.31 0)
+		(at 148.59 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4336,9 +4374,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f41082e5-5fdd-45ff-90e0-a09d43f90958")
-		(property "Reference" "#PWR08"
-			(at 102.87 73.66 0)
+		(uuid "94c0bef3-fc25-426d-92fa-4a2c134c37ed")
+		(property "Reference" "#PWR016"
+			(at 148.59 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4349,7 +4387,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 72.39 0)
+			(at 148.59 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4359,7 +4397,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 67.31 0)
+			(at 148.59 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4370,7 +4408,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 67.31 0)
+			(at 148.59 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4381,7 +4419,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 67.31 0)
+			(at 148.59 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4392,15 +4430,870 @@
 			)
 		)
 		(pin "1"
-			(uuid "d01b7664-a4a1-445c-9dba-e9dc08e7e88c")
+			(uuid "5969ffe0-682c-4b13-b67b-ea6a6fae0fde")
 		)
 		(instances
 			(project "Luminosite"
 				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
-					(reference "#PWR08")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 134.62 86.36 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bcc574d9-ee64-471f-bd32-7d38d37bb165")
+		(property "Reference" "R12"
+			(at 136.906 86.614 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 132.842 86.614 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 134.62 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 134.62 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6e800f3c-b869-4931-9b99-5cc3949b089f")
+		)
+		(pin "1"
+			(uuid "3abb050a-8eac-4eb6-a1e9-2efed62c4359")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6022")
+		(at 175.26 82.55 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4ed10eb-5058-47db-a7a2-ff4f12193bdc")
+		(property "Reference" "U3"
+			(at 175.26 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6022"
+			(at 175.26 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MCP2022:SOP8P65_300X640X120L60X24N"
+			(at 175.26 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/devicedoc/20001685e.pdf"
+			(at 175.26 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual Operational Amplifiers, Rail-to-Rail Input/Output, DIP-8/SOIC-8/TSSOP-8"
+			(at 175.26 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "ae6cdb26-034d-40e6-815d-2ea658209fe7")
+		)
+		(pin "2"
+			(uuid "ed662f9f-91d9-444d-ae30-b4e3efa39e27")
+		)
+		(pin "8"
+			(uuid "74fabd14-0c69-4054-8c5c-b25de72189a1")
+		)
+		(pin "1"
+			(uuid "8df24bae-693c-4e6c-9418-404780d236de")
+		)
+		(pin "4"
+			(uuid "9b9aff92-131f-495d-92e9-523cd2282585")
+		)
+		(pin "3"
+			(uuid "160d8734-9842-41b4-bfcf-1e9f13bd09c0")
+		)
+		(pin "5"
+			(uuid "b42508c9-812d-4b07-b1b3-9218b9bfc2e0")
+		)
+		(pin "7"
+			(uuid "490c1583-3b70-443a-8b54-b9e0d466a1bc")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "U3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BC547:BC547C")
+		(at 101.6 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3eee808-ca32-4a28-96dd-3f70ac7cfaed")
+		(property "Reference" "Q3"
+			(at 105.41 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547C"
+			(at 105.41 90.1699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "BC547:TRANS_BC547C"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "BJT, TO-92, 45V, 100mA, NPN, 0.5W, 150°C"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Diotec Semiconductor"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "CREATOR" "DIZAR"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "TO-92 Diotec"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/BC547C/Diotec/view-part/?ref=eda"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "2022-11-28"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/BC547C/Diotec/view-part/?ref=snap"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "BC547C"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=4299155&manufacturer=Diotec Semiconductor&part_name=BC547C&search_term=bc547"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Diotec Semiconductor"
+			(at 101.6 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "ebaf5c0d-5a4f-49da-8dd1-7b03220bbbc3")
+		)
+		(pin "1"
+			(uuid "4b643fa7-4f54-4431-9e7a-5b99185a1ade")
+		)
+		(pin "3"
+			(uuid "9c660dc3-b379-410b-af7a-a96fe4c11810")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Reference_Voltage:TL431D")
+		(at 124.46 118.11 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e26b395c-ada1-40e2-af6c-ff454098025d")
+		(property "Reference" "U2"
+			(at 127 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TL431D"
+			(at 127 119.3799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 130.81 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl431.pdf"
+			(at 135.128 117.856 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "Shunt Regulator, SO-8"
+			(at 132.842 118.364 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f58faaaf-e319-4987-8fa9-cef193a53242")
+		)
+		(pin "7"
+			(uuid "fd22ac08-7290-4a9f-ae7b-9f25a72ee17f")
+		)
+		(pin "6"
+			(uuid "326e5abb-5d65-431e-a9cc-bed7c86740ff")
+		)
+		(pin "8"
+			(uuid "2d633a8b-3443-465b-b17c-8d02266597c7")
+		)
+		(pin "3"
+			(uuid "3b590f91-c4db-46ee-b961-a2893427496f")
+		)
+		(pin "2"
+			(uuid "f9afa16a-eef9-46cc-b802-e3c026fcb289")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+			(project "Capteur_temperature"
+				(path "/abc05c36-ee00-41d6-a933-3d81c6d1af5e"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5a9027e-3360-4504-a9c5-f9fa52aa4144")
+		(property "Reference" "#PWR05"
+			(at 205.74 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 205.74 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 205.74 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f98fda0e-4821-481e-9661-c85ddb5eabb9")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BC547:BC547C")
+		(at 86.36 88.9 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e6e05ff8-e958-4591-8788-3dffb751f221")
+		(property "Reference" "Q4"
+			(at 82.55 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547C"
+			(at 82.55 90.1699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "BC547:TRANS_BC547C"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "BJT, TO-92, 45V, 100mA, NPN, 0.5W, 150°C"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Diotec Semiconductor"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "CREATOR" "DIZAR"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "TO-92 Diotec"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/BC547C/Diotec/view-part/?ref=eda"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "2022-11-28"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/BC547C/Diotec/view-part/?ref=snap"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "BC547C"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=4299155&manufacturer=Diotec Semiconductor&part_name=BC547C&search_term=bc547"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Diotec Semiconductor"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "530cbceb-ac91-48c3-9e95-dd11b17ad13f")
+		)
+		(pin "1"
+			(uuid "5e02ae2c-25c9-4da3-8bc3-e9535c019ae6")
+		)
+		(pin "3"
+			(uuid "676ee201-db07-42c6-9f89-e7bc078c3a81")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/7b70d6a2-1061-452a-98d5-e1a8540e4782"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
