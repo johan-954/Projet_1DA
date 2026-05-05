@@ -186,6 +186,159 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Linear:AMS1117-5.0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AMS1117-5.0"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AMS1117-5.0_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AMS1117-5.0_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "TQ2-L2-5V:TQ2-L2-5V"
 			(pin_names
 				(offset 1.016)
@@ -1258,10 +1411,10 @@
 		)
 	)
 	(junction
-		(at 88.9 101.6)
+		(at 80.01 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1b20bf32-5826-409d-9901-f437e948c4de")
+		(uuid "8a58da7a-dfa6-4822-8277-0d40e1d9eba3")
 	)
 	(no_connect
 		(at 26.67 22.86)
@@ -1289,13 +1442,13 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 101.6) (xy 68.58 101.6)
+			(xy 68.58 127) (xy 68.58 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "214cb3ca-31ae-4b28-b03c-323e620ac1a0")
+		(uuid "27280aad-1e4f-4f08-a7be-bea3b3f29aeb")
 	)
 	(wire
 		(pts
@@ -1306,6 +1459,16 @@
 			(type default)
 		)
 		(uuid "2f6de51b-162a-4df7-98f5-050dbb79fe29")
+	)
+	(wire
+		(pts
+			(xy 76.2 114.3) (xy 80.01 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33a52010-eef7-4f3d-a7ac-1d28f8e24861")
 	)
 	(wire
 		(pts
@@ -1329,6 +1492,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 77.47) (xy 80.01 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6647b28e-0ee8-47b2-b5e5-964c7a5bc2d6")
+	)
+	(wire
+		(pts
 			(xy 72.39 77.47) (xy 72.39 76.2)
 		)
 		(stroke
@@ -1336,6 +1509,26 @@
 			(type default)
 		)
 		(uuid "6824b1d0-c26e-4088-97a0-ce5e39724382")
+	)
+	(wire
+		(pts
+			(xy 80.01 114.3) (xy 83.82 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73870885-80ff-4110-8812-b3a5002b05bb")
+	)
+	(wire
+		(pts
+			(xy 68.58 127) (xy 74.93 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88ac6c37-0198-434a-853e-a7014e569052")
 	)
 	(wire
 		(pts
@@ -1349,6 +1542,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 114.3) (xy 83.82 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5bd01df-c652-43d0-a79f-b2fa1c414f99")
+	)
+	(wire
+		(pts
 			(xy 58.42 77.47) (xy 58.42 90.17)
 		)
 		(stroke
@@ -1359,13 +1562,13 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 77.47) (xy 82.55 101.6)
+			(xy 77.47 127) (xy 83.82 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c3fe6360-e8d6-47c2-a9e8-cd1a86cd3b59")
+		(uuid "bef1a07d-04d5-4763-924b-8102ebc4d825")
 	)
 	(wire
 		(pts
@@ -1379,16 +1582,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 101.6) (xy 82.55 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce4db6e0-4e26-4671-88e5-4bd9c403b44b")
-	)
-	(wire
-		(pts
 			(xy 88.9 88.9) (xy 114.3 88.9)
 		)
 		(stroke
@@ -1399,47 +1592,23 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 77.47) (xy 72.39 77.47)
+			(xy 80.01 77.47) (xy 80.01 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e6e7be93-2c97-41ce-9173-6fe9d5b44f41")
+		(uuid "e5d0674b-6393-472a-b66d-a92203458337")
 	)
 	(wire
 		(pts
-			(xy 68.58 101.6) (xy 68.58 97.79)
+			(xy 68.58 97.79) (xy 68.58 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ef64b5e1-7035-4ee5-8590-044a80cf6c1e")
-	)
-	(global_label "+5V"
-		(shape input)
-		(at 63.5 101.6 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1ff78342-11cc-4106-ba36-95f66b1c1aec")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.2985 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(global_label "Pompe_OUT"
 		(shape input)
@@ -1799,6 +1968,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AMS1117-5.0")
+		(at 68.58 114.3 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "39ac82d1-9872-4a65-81f0-1e5cd268d699")
+		(property "Reference" "U5"
+			(at 64.77 113.0299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AMS1117-5.0"
+			(at 64.77 115.5699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 63.5 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 74.93 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
+			(at 68.58 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "23d27a05-579d-4eba-8e3c-87def5170436")
+		)
+		(pin "3"
+			(uuid "e0d97e2d-baee-414f-bc34-65cece4bfbfd")
+		)
+		(pin "1"
+			(uuid "ddff95f4-2ff4-4d13-89f6-69ed84d83289")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/8a83f3a8-b11a-4364-9375-a01c90bd14db"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 88.9 101.6 0)
 		(unit 1)
@@ -1870,6 +2123,85 @@
 			(project "Luminosite"
 				(path "/224aed98-e352-413c-9045-253a32dabf3f/8a83f3a8-b11a-4364-9375-a01c90bd14db"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 74.93 132.08 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "81beb602-4832-4904-be53-aecb352ce256")
+		(property "Reference" "J4"
+			(at 73.152 131.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 76.2 134.112 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
+			(at 74.93 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 74.93 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ae12ff5e-2c4f-493d-87f8-23edaf94e085")
+		)
+		(pin "1"
+			(uuid "bac10417-45ad-45e6-bf98-a01bb0b105f9")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/8a83f3a8-b11a-4364-9375-a01c90bd14db"
+					(reference "J4")
 					(unit 1)
 				)
 			)

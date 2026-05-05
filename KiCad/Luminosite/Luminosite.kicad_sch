@@ -633,6 +633,30 @@
 			(embedded_fonts no)
 		)
 	)
+	(global_label "Luminosité_OUT"
+		(shape input)
+		(at 139.7 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2bd1ae2a-6926-427a-87e0-2d1ca77a0cc9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 156.8476 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "Température_OUT"
 		(shape input)
 		(at 104.14 116.84 180)
@@ -646,30 +670,6 @@
 		(uuid "2d434872-0c8a-4da3-997a-8b4fbc7085e3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 85.541 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "Pompe_OUT"
-		(shape input)
-		(at 104.14 124.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2d5614f4-03b9-4cba-8b94-cf46ba359b6b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.8629 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -729,33 +729,9 @@
 			)
 		)
 	)
-	(global_label "Luminosité_OUT"
-		(shape input)
-		(at 139.7 116.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d026f6e7-aa88-4349-aa3d-d4042f3c905c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.8476 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "Humidite_OUT"
 		(shape input)
-		(at 104.14 121.92 180)
+		(at 104.14 119.38 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -763,9 +739,9 @@
 			)
 			(justify right)
 		)
-		(uuid "df41c308-6faa-45db-b0a3-c45747ca9cf6")
+		(uuid "bc8b566e-9645-42e2-889e-3b8ee3cfae47")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.8671 121.92 0)
+			(at 88.8671 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -774,6 +750,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "Pompe_OUT"
+		(shape input)
+		(at 139.7 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f0a0d262-0cb2-4788-bb3c-e0568f9f95f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.9771 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
