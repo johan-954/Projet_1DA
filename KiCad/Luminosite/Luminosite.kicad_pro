@@ -802,7 +802,7 @@
         "uuid": "224aed98-e352-413c-9045-253a32dabf3f"
       }
     ],
-    "used_designators": "#PWR7,Q3-4",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -821,6 +821,10 @@
     [
       "8a83f3a8-b11a-4364-9375-a01c90bd14db",
       "Pompe"
+    ],
+    [
+      "53dabe1a-f4e5-4d3a-aaa0-66ec0b83702b",
+      "Humidité"
     ]
   ],
   "text_variables": {},

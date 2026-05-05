@@ -590,6 +590,30 @@
 			)
 		)
 	)
+	(global_label "Humidite_OUT"
+		(shape input)
+		(at 139.7 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4f3b61c3-f9b1-4930-9d8b-1422452640f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 154.9729 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "GND_ESP32"
 		(shape input)
 		(at 139.7 129.54 0)
@@ -925,6 +949,62 @@
 				(path "/224aed98-e352-413c-9045-253a32dabf3f"
 					(reference "U4")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 147.32 15.24)
+		(size 40.64 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "53dabe1a-f4e5-4d3a-aaa0-66ec0b83702b")
+		(property "Sheetname" "Humidité"
+			(at 147.32 14.5284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Humidite.kicad_sch"
+			(at 147.32 52.6546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 147.32 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f"
+					(page "5")
 				)
 			)
 		)

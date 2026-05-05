@@ -1590,7 +1590,7 @@
 			(uuid "c1116719-993c-41b0-b605-0d7369c4ab59")
 		)
 		(pin "2"
-			(uuid "a20d7ad3-c40b-4d79-bb42-813517d62963")
+			(uuid "dc456adf-fddb-49c6-9396-2f706733895f")
 		)
 		(pin "5"
 			(uuid "c722a108-3e30-4306-8712-36aef7776641")
@@ -1602,10 +1602,10 @@
 			(uuid "ac56ff76-984a-442d-833a-40b45401b3df")
 		)
 		(pin "4"
-			(uuid "9484576a-08c1-44f1-9586-31c65eb08524")
+			(uuid "48eba00a-2f4e-4c7c-bd5b-f9ea70590b12")
 		)
 		(pin "3"
-			(uuid "11f6a482-ef70-4596-a338-d2232465b933")
+			(uuid "5acda6c0-266b-443e-9cea-ac8d8a8d6f1a")
 		)
 		(pin "7"
 			(uuid "d2db1995-0ddf-43a8-8802-7a0f52e87c8a")
@@ -1691,7 +1691,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a4dcda00-d0d1-4131-b100-a1d4a67a135b")
+			(uuid "e05b299c-c623-442b-b2d0-c971fc5347cb")
 		)
 		(instances
 			(project "Luminosite"
@@ -2008,10 +2008,10 @@
 			(uuid "c722a108-3e30-4306-8712-36aef7776642")
 		)
 		(pin "10"
-			(uuid "9e95f3a1-132c-4385-9b09-df696be190b4")
+			(uuid "389e75ab-ec2f-49fa-b03f-1b917b9147f5")
 		)
 		(pin "6"
-			(uuid "ac56ff76-984a-442d-833a-40b45401b3e0")
+			(uuid "be24d119-e52e-452a-868d-dbce1130201a")
 		)
 		(pin "4"
 			(uuid "9484576a-08c1-44f1-9586-31c65eb08525")
@@ -2353,13 +2353,13 @@
 			(uuid "11f6a482-ef70-4596-a338-d2232465b935")
 		)
 		(pin "7"
-			(uuid "d2db1995-0ddf-43a8-8802-7a0f52e87c8c")
+			(uuid "26e9d482-837e-44d0-b0fb-f37f5616c851")
 		)
 		(pin "8"
-			(uuid "5a190f8c-5b9a-46d9-b10e-a11f0d6c5a40")
+			(uuid "0ee3db06-9c3c-4d67-999a-458c51a74558")
 		)
 		(pin "9"
-			(uuid "4245eb90-9f82-4852-a802-e3a5157584b5")
+			(uuid "23d82fab-4ae6-44b7-87c8-6de797d716e3")
 		)
 		(instances
 			(project "Luminosite"
@@ -2667,13 +2667,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "c1116719-993c-41b0-b605-0d7369c4ab5c")
+			(uuid "a5166361-9615-4cf4-9486-da1ab0a014f1")
 		)
 		(pin "2"
 			(uuid "a20d7ad3-c40b-4d79-bb42-813517d62966")
 		)
 		(pin "5"
-			(uuid "c722a108-3e30-4306-8712-36aef7776644")
+			(uuid "b522ba9f-7e9e-4480-b0ea-d96da818b0ec")
 		)
 		(pin "10"
 			(uuid "9e95f3a1-132c-4385-9b09-df696be190b6")

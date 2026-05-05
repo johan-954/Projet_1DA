@@ -1,0 +1,70 @@
+(kicad_symbol_lib
+  (version 20231120)
+  (generator kicad_symbol_editor)
+  (symbol "SEN0114_MoistureSensor"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 11 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "SEN0114"
+      (at 0 8.5 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "SEN0114:SEN0114_MoistureSensor"
+      (at 0 6 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Datasheet" "https://wiki.dfrobot.com/Moisture_Sensor__SKU_SEN0114_"
+      (at 0 3.5 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Description" "DFRobot Soil Moisture Sensor, analog output 0-4.2V, 3.3V/5V, SKU:SEN0114"
+      (at 0 1 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (symbol "SEN0114_MoistureSensor_0_1"
+      (rectangle
+        (start -8.89 -5.08)
+        (end 8.89 7.62)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+      (text "SEN0114"
+        (at 0 5.842 0)
+        (effects (font (size 1.524 1.524) bold))
+      )
+      (text "Moisture Sensor"
+        (at 0 3.81 0)
+        (effects (font (size 1.016 1.016)))
+      )
+      (text "DFRobot"
+        (at 0 2.286 0)
+        (effects (font (size 1.016 1.016) italic))
+      )
+    )
+    (symbol "SEN0114_MoistureSensor_1_1"
+      ; VCC (Red wire)
+      (pin power_in line
+        (at -13.97 5.08 0) (length 5.08)
+        (name "VCC" (effects (font (size 1.016 1.016))))
+        (number "1" (effects (font (size 1.016 1.016))))
+      )
+      ; GND (Black wire)
+      (pin power_in line
+        (at -13.97 2.54 0) (length 5.08)
+        (name "GND" (effects (font (size 1.016 1.016))))
+        (number "2" (effects (font (size 1.016 1.016))))
+      )
+      ; SIG — Analog output (Blue wire)
+      (pin output line
+        (at -13.97 0 0) (length 5.08)
+        (name "SIG" (effects (font (size 1.016 1.016))))
+        (number "3" (effects (font (size 1.016 1.016))))
+      )
+    )
+  )
+)
