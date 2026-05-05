@@ -802,7 +802,7 @@
         "uuid": "224aed98-e352-413c-9045-253a32dabf3f"
       }
     ],
-    "used_designators": "J2-3",
+    "used_designators": "J2-3,#PWR8,#PWR11",
     "variants": []
   },
   "sheets": [
