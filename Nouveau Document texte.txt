@@ -1,0 +1,1 @@
+Dans le cadre de notre projet d'électronique nous avons besoin de différents composants ainsi que d'un PCB. Notre projet est  Vous trouverez en pièce jointe les fichier Excel pour le matériel et le fichier Gerber pour l'élaboration du PCB.

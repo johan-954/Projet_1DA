@@ -744,6 +744,12 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -802,7 +808,7 @@
         "uuid": "224aed98-e352-413c-9045-253a32dabf3f"
       }
     ],
-    "used_designators": "BT1,U5-6,J4",
+    "used_designators": "#PWR15,BT1,U5-6,J4,C4",
     "variants": []
   },
   "sheets": [
