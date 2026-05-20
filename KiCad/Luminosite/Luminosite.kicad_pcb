@@ -82,9 +82,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "Gerber/")
 		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
@@ -834,7 +834,7 @@
 		(uuid "0d03c0a2-e5aa-4128-af72-1c79f958966e")
 		(at 147.9725 98.205 90)
 		(property "Reference" "U1"
-			(at 3.2 -2.15 90)
+			(at -0.345 -2.1225 90)
 			(layer "F.SilkS")
 			(uuid "af9f8292-a79e-4cf6-bcd7-e946cc99b4fc")
 			(effects
@@ -2691,7 +2691,7 @@
 		(descr "module CMS SOT223 4 pins")
 		(tags "CMS SOT")
 		(property "Reference" "U5"
-			(at 4.925 3.25 180)
+			(at 4.9 3.075 180)
 			(layer "F.SilkS")
 			(uuid "106a72c0-53a4-4658-86be-c0b5272b46f9")
 			(effects
@@ -6554,7 +6554,7 @@
 			)
 		)
 		(property "Value" "ESP32-C3_SUPERMINI_TH"
-			(at 0 -11.825 180)
+			(at -0.025 -10.675 180)
 			(layer "F.Fab")
 			(uuid "adc238ed-13a0-42d3-bcf2-70f9de9dcebc")
 			(effects
@@ -9658,7 +9658,7 @@
 	)
 	(gr_text "Humidité"
 		(at 154 70.225 0)
-		(layer "F.Cu")
+		(layer "F.SilkS")
 		(uuid "9c137ca5-7fe2-48ab-86d0-cf7e866b6dfe")
 		(effects
 			(font
@@ -9670,7 +9670,7 @@
 	)
 	(gr_text "Pompe"
 		(at 125.7 77.85 270)
-		(layer "F.Cu")
+		(layer "F.SilkS")
 		(uuid "a86fab4d-d464-4d4d-929f-c08596bbe890")
 		(effects
 			(font
@@ -9682,7 +9682,7 @@
 	)
 	(gr_text "Batterie"
 		(at 125.725 70.35 270)
-		(layer "F.Cu")
+		(layer "F.SilkS")
 		(uuid "abbab311-7dfc-445d-9d88-ed48758ab3c7")
 		(effects
 			(font
@@ -9694,7 +9694,7 @@
 	)
 	(gr_text "Luminosité"
 		(at 134.2 97.275 0)
-		(layer "F.Cu")
+		(layer "F.SilkS")
 		(uuid "8ae0f7b1-7b76-498a-9a17-b2bb6226d1de")
 		(effects
 			(font

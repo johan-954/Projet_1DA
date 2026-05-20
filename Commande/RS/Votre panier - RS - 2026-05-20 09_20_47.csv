@@ -1,0 +1,3 @@
+﻿"Code commande RS","Quantité","Étiquette","Taille du lot","Centre de coûts","Description","Référence fabricant ","Nom du fabricant","Prix unitaire","Prix total"
+"0683317",5,"l'unité (par multiple de 5)",5,,"Diode de commutation Microchip Simple, 75 V, , 200 mA Traversant 2 broches DO-35","1N914","Microchip",0.842,4.21
+"2163778",1,"la pièce",1,,"Kit compatible Arduino Gravité : capteur d'humidité de sol analogique pour Arduino DFRobot","SEN0114","DFRobot",2.44,2.44

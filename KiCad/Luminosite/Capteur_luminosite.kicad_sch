@@ -908,6 +908,12 @@
 		(uuid "53bd713d-10e3-411a-9dae-714de89afdce")
 	)
 	(junction
+		(at 177.8 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a620d81-640e-42e4-ac1d-c3c8b1742dd1")
+	)
+	(junction
 		(at 100.33 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -924,6 +930,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e0cd4005-9062-4611-b196-a20819eadaeb")
+	)
+	(wire
+		(pts
+			(xy 177.8 102.87) (xy 193.04 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "028ea04b-6887-4f6b-a186-232267a566f3")
 	)
 	(wire
 		(pts
@@ -1047,7 +1063,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 102.87) (xy 193.04 102.87)
+			(xy 165.1 102.87) (xy 177.8 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1184,6 +1200,16 @@
 			(type default)
 		)
 		(uuid "8ecd24ad-c09e-4b5b-9337-77f7dce04e0c")
+	)
+	(wire
+		(pts
+			(xy 177.8 102.87) (xy 177.8 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "906df312-8a35-474f-a9fd-0686756b0932")
 	)
 	(wire
 		(pts
@@ -1334,6 +1360,16 @@
 			(type default)
 		)
 		(uuid "eff4fcfa-01a9-4964-a23c-e6bfa705aad5")
+	)
+	(wire
+		(pts
+			(xy 177.8 109.22) (xy 177.8 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1bf50a4-f6d5-4f53-8012-b4488a2313b0")
 	)
 	(wire
 		(pts
@@ -1784,6 +1820,84 @@
 			(project "Luminosite"
 				(path "/224aed98-e352-413c-9045-253a32dabf3f/a1ec5a25-f8a1-4803-94b4-701cfae1b8a6"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10fdb5f8-2a20-4290-b575-bf151bd0db6f")
+		(property "Reference" "#PWR015"
+			(at 177.8 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ecdca04f-c772-4df7-b314-1da043451fc5")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/a1ec5a25-f8a1-4803-94b4-701cfae1b8a6"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -2444,6 +2558,88 @@
 			(project "Luminosite"
 				(path "/224aed98-e352-413c-9045-253a32dabf3f/a1ec5a25-f8a1-4803-94b4-701cfae1b8a6"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 177.8 106.68 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cb59eb1c-ef64-4060-8f0b-c1ab7bda27b3")
+		(property "Reference" "C4"
+			(at 180.34 107.9565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10p"
+			(at 180.34 105.4165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 177.8 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 177.8 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "44b881b5-4c3c-4573-be7e-d8f65f977457")
+		)
+		(pin "1"
+			(uuid "b57afac9-b8e7-412e-8f63-dbc2a6ca3b77")
+		)
+		(instances
+			(project "Luminosite"
+				(path "/224aed98-e352-413c-9045-253a32dabf3f/a1ec5a25-f8a1-4803-94b4-701cfae1b8a6"
+					(reference "C4")
 					(unit 1)
 				)
 			)
